@@ -15,7 +15,7 @@ public class NPCMove
 
 }
 
-public class NpcManager : MovingObject
+public class NPCManager : MovingObject
 {
     [SerializeField]
     public NPCMove npc;
@@ -23,6 +23,8 @@ public class NpcManager : MovingObject
     private void Start()
     {
         queue = new Queue<string>();
+
+        StartCoroutine(MoveCoroutine());
     }
 
     public void SetMove()
