@@ -91,7 +91,7 @@ public class MovingObject : MonoBehaviour
 
             anim.SetBool("Walking", true);
 
-            boxCollider.offset = new Vector2(vector.x = 0.7f * speed * walkCount, vector.y * 0.7f * speed * walkCount);
+            boxCollider.offset = new Vector2(vector.x * 0.7f * speed * walkCount, vector.y * 0.7f * speed * walkCount);
             while (currentWalkCount < walkCount)
             {
 
@@ -112,18 +112,28 @@ public class MovingObject : MonoBehaviour
 
     protected bool CheckCollision()
     {
-        RaycastHit2D hit;
+        RaycastHit2D[] hit;
 
         Vector2 start = transform.position;
         Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount);
 
-        boxCollider.enabled = false; // 자기 자신은 충돌 활성화 끄기
-        hit = Physics2D.Linecast(start, end, layerMask);
-        boxCollider.enabled = true;
+        hit = Physics2D.LinecastAll(start, end, layerMask);
 
-        if (hit.transform != null)
+        if (hit.Length > 1)
+        {
+            // 첫 번째 충돌을 무시하고 두 번째 충돌을 선택
+            GameObject secondHitObject = hit[1].collider.gameObject;
+            Debug.Log("Second hit object: " + secondHitObject.name);
             return true;
-        return false;
+        }
+        else
+        {
+            // 충돌이 하나만 있는 경우
+            GameObject firstHitObject = hit[0].collider.gameObject;
+            Debug.Log("First hit object: " + firstHitObject.name);
+            return false;
+        }
+
     }
 
 }

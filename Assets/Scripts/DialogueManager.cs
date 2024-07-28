@@ -14,13 +14,11 @@ public class DialogueManager : MonoBehaviour
 
     public void Action(GameObject scanObj)
     {
-
         isAction = true;
         scanObject = scanObj;
         ObjectData objectData = scanObject.GetComponent<ObjectData>();
         Talk(objectData.id, objectData.isNpc);
         talkPanel.SetActive(isAction);
-
     }
 
     void Talk(int id, bool isNpc)

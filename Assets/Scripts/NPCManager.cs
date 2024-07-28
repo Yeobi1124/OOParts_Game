@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class NPCMove
 {
-    public bool NPCmove; // npc 움직임의 여부
+    public bool CanMove; // npc 움직임의 여부
 
     public string[] direction; // npc가 움직일 방향
 
@@ -23,18 +23,20 @@ public class NPCManager : MovingObject
     private void Start()
     {
         queue = new Queue<string>();
-
-        StartCoroutine(MoveCoroutine());
+        base.anim.SetFloat("DirY", -1f);
+        base.anim.SetFloat("DirX", 1f);
     }
 
     public void SetMove()
     {
         StartCoroutine(MoveCoroutine());
+        npc.CanMove = true;
     }
 
     public void SetNotMove()
     {
         StopAllCoroutines();
+        npc.CanMove = false;
     }
 
     IEnumerator MoveCoroutine()

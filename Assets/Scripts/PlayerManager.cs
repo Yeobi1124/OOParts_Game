@@ -25,6 +25,9 @@ public class PlayerManager : MovingObject
             anim = GetComponent<Animator>();
             boxCollider = GetComponent<BoxCollider2D>();
             Instance = this;
+            base.anim.SetFloat("DirY", -1f);
+            base.anim.SetFloat("DirX", 1f);
+            dirVec = Vector3.down;
         }
         else
         {
@@ -44,24 +47,37 @@ public class PlayerManager : MovingObject
         }
         if (dirVec != null)
         {
-            RaycastHit2D rayHit = Physics2D.Raycast(transform.position, dirVec, 0.7f, LayerMask.GetMask("NoPassing"));
-            if (rayHit.collider != null)
-            {
-                scanObject = rayHit.collider.gameObject;
-            }
-            else
-                scanObject = null;
+            RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, dirVec, 0.7f, LayerMask.GetMask("NoPassing"));
+            
+                if (hit.Length > 1)
+                {
+                    scanObject = hit[1].collider.gameObject;
+                }
+                else
+                {
+                    scanObject=null;
+                }
         }
 
-        if (Input.GetButtonDown("Jump") && scanObject.GetComponent<ObjectData>() != null)
+        if (Input.GetButtonDown("Jump"))
         {
-            canMove = false;
-            dialogueManager.Action(scanObject);
+            if (scanObject != null)
+            {
+                ObjectData objectData = scanObject.GetComponent<ObjectData>();
+                if (objectData != null && scanObject.GetComponent<NPCManager>() != null)
+                {
+                    if (!scanObject.GetComponent<NPCManager>().npc.CanMove)
+                    {
+                        canMove = false;
+                        dialogueManager.Action(scanObject);
+                    }
+                }
+            }
         }
 
     }
 
-    IEnumerator MoveCoroutine()
+        IEnumerator MoveCoroutine()
     {
         while (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
         {
