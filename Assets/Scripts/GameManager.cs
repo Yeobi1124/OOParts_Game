@@ -5,9 +5,13 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public PlayerManager player;
+    
     public string currentMapName;
     public Camera mainCamera;
+
+    public PlayerManager player;
+    public FadeManager fadeManager;
+    public MapManager mapManager;
 
     private void Awake()
     {

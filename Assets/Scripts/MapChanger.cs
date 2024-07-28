@@ -6,12 +6,27 @@ using UnityEngine.SceneManagement;
 public class MapChanger : MonoBehaviour
 {
     public string transferMapName;
+    public GameObject startPoint;
+    public Collider2D collision;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        this.collision = collision;
+        if (this.collision.gameObject.name == "Player")
         {
-            GameManager.Instance.currentMapName = transferMapName;
-            SceneManager.LoadScene(transferMapName);
+            Debug.Log("1");
+            StartCoroutine(MapChangeCoroutine());
         }
     }
+
+    IEnumerator MapChangeCoroutine()
+    {
+        Debug.Log("2");
+        GameManager.Instance.currentMapName = transferMapName;
+        GameManager.Instance.fadeManager.FadeOut();
+        yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration * 2);
+        GameManager.Instance.player.transform.position = startPoint.transform.position;
+        yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration);
+        GameManager.Instance.fadeManager.FadeIn();
+    }
 }
+
