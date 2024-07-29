@@ -13,19 +13,19 @@ public class MapChanger : MonoBehaviour
         this.collision = collision;
         if (this.collision.gameObject.name == "Player")
         {
-            Debug.Log("1");
             StartCoroutine(MapChangeCoroutine());
         }
     }
 
     IEnumerator MapChangeCoroutine()
     {
-        Debug.Log("2");
         GameManager.Instance.currentMapName = transferMapName;
         GameManager.Instance.fadeManager.FadeOut();
-        yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration * 2);
-        GameManager.Instance.player.transform.position = startPoint.transform.position;
         yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration);
+        GameManager.Instance.player.transform.position = startPoint.transform.position;
+        GameManager.Instance.player.canMove = false;
+        yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration);
+        GameManager.Instance.player.canMove = true;
         GameManager.Instance.fadeManager.FadeIn();
     }
 }

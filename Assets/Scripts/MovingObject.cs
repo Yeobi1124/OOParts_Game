@@ -123,14 +123,12 @@ public class MovingObject : MonoBehaviour
         {
             // 첫 번째 충돌을 무시하고 두 번째 충돌을 선택
             GameObject secondHitObject = hit[1].collider.gameObject;
-            Debug.Log("Second hit object: " + secondHitObject.name);
             return true;
         }
         else
         {
             // 충돌이 하나만 있는 경우
             GameObject firstHitObject = hit[0].collider.gameObject;
-            Debug.Log("First hit object: " + firstHitObject.name);
             return false;
         }
 

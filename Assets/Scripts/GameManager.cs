@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public PlayerManager player;
     public FadeManager fadeManager;
     public MapManager mapManager;
+    public DialogueManager dialogueManager;
+    public QuestManager questManager;
 
     private void Awake()
     {

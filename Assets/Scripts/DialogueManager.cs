@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,11 +8,19 @@ public class DialogueManager : MonoBehaviour
 {
     public TalkManager talkManager;
     public GameObject talkPanel;
-    public Text talkText;
+    public GameObject namePanel;
+
+    public TypeEffect talk;
+    public Text nameText;
+
     public GameObject scanObject;
     public bool isAction;
     public int talkIndex;
 
+    private void Start()
+    {
+        talkPanel.SetActive(false);
+    }
     public void Action(GameObject scanObj)
     {
         isAction = true;
@@ -21,24 +30,41 @@ public class DialogueManager : MonoBehaviour
         talkPanel.SetActive(isAction);
     }
 
-    void Talk(int id, bool isNpc)
+    void Talk(int npcId, bool isNpc)
     {
         GameManager.Instance.player.canMove = false;
-        string talkData = talkManager.GetTalk(id, talkIndex);
+        int QuestTalkIndex = 0;
+        string talkData = "";
+        if (talk.isAnim)
+        {
+            talk.SetMsg("");
+            return;
+        }
+        else
+        {
+            QuestTalkIndex = GameManager.Instance.questManager.GetQuestTalkIndex(npcId);
+            talkData = talkManager.GetTalk(npcId + QuestTalkIndex, talkIndex);
+
+        }
+
         if (talkData == null)
         {
             isAction = false;
             GameManager.Instance.player.canMove = true;
             talkIndex = 0;
+            GameManager.Instance.questManager.CheckQuest(npcId);
             return;
         }
         if (isNpc)
         {
-            talkText.text = talkData;
+            talk.SetMsg(talkData);
+            namePanel.SetActive(true);
+            nameText.text = talkManager.nameData[npcId];
         }
         else
         {
-            talkText.text = talkData;
+            talk.SetMsg(talkData);
+            namePanel.SetActive(false);
         }
 
         isAction = true;
