@@ -4,16 +4,18 @@ using UnityEngine.UI;
 
 public class FadeManager : MonoBehaviour
 {
-    public Image fadeImage;
+    Image fadeImage;
     public float fadeDuration;
 
     private void Start()
     {
-        FadeIn();  
+        fadeImage = GetComponent<Image>();
+        fadeImage.gameObject.SetActive(false);
     }
 
     public void FadeOut()
     {
+        fadeImage.gameObject.SetActive(true);
         StartCoroutine(FadeOutCoroutine());
     }
 
@@ -51,8 +53,9 @@ public class FadeManager : MonoBehaviour
             fadeImage.color = color;
             yield return null;
         }
-
+        fadeImage.gameObject.SetActive(false);
         color.a = 0f;
         fadeImage.color = color;
+
     }
 }

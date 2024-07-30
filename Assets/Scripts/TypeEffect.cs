@@ -8,6 +8,7 @@ public class TypeEffect : MonoBehaviour
     public int CharPerSeconds;
     string targetMsg;
     Text msgText;
+    AudioSource audioSource;
     int index;
     float interval;
     public bool isAnim;
@@ -15,6 +16,7 @@ public class TypeEffect : MonoBehaviour
     private void Awake()
     {
         msgText = GetComponent<Text>();
+        audioSource = GetComponent<AudioSource>();
     }
     public void SetMsg(string msg)
     {
@@ -49,6 +51,8 @@ public class TypeEffect : MonoBehaviour
             return;
         }
         msgText.text += targetMsg[index];
+        if (targetMsg[index] != ' ' || targetMsg[index] != '.')
+            audioSource.Play();
         index++;
         Invoke("Effecting", interval);
     }

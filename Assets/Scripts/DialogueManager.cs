@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
 
     public TypeEffect talk;
     public Text nameText;
+    public GameObject menuSet;
 
     public GameObject scanObject;
     public bool isAction;
@@ -20,6 +21,15 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         talkPanel.SetActive(false);
+    }
+    private void Update()
+    {
+        if (Input.GetButtonDown("Cancel")) {
+            if (menuSet.activeSelf)
+                menuSet.SetActive(false);
+            else
+                menuSet.SetActive(true);
+        }
     }
     public void Action(GameObject scanObj)
     {
