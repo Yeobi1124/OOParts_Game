@@ -50,3 +50,6 @@ TagManager:
   - name: Sky
     uniqueID: 4011668707
     locked: 0
+  - name: Weather
+    uniqueID: 3640212605
+    locked: 0
