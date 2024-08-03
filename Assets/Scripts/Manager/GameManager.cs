@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [Header("Options")]
     public string currentMapName;
     public Camera mainCamera;
+    public List<ItemData> itemData;
 
     [Header("Managers")]
     public PlayerManager player;
@@ -45,6 +46,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerY", player.transform.position.y);
         PlayerPrefs.SetInt("QuestId", questManager.questId);
         PlayerPrefs.SetInt("QuestActionIndex", questManager.questActionIndex);
+        for(int i =0; i < inventoryManager.inventory.Count; i++)
+        {
+            PlayerPrefs.SetInt("Item" + inventoryManager.inventory[i].itemId.ToString(), inventoryManager.inventory[i].itemCount);
+        }
         PlayerPrefs.Save();
 
         dialogueManager.menuSet.SetActive(false);
@@ -54,11 +59,19 @@ public class GameManager : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("PlayerX"))
             return;
-
         float x = PlayerPrefs.GetFloat("PlayerX");
         float y = PlayerPrefs.GetFloat("PlayerY");
         int questId = PlayerPrefs.GetInt("QuestId");
         int questActionIndex = PlayerPrefs.GetInt("QuestActionIndex");
+        for(int i =0; i < itemData.Count; i++)
+        {
+            
+            if (PlayerPrefs.HasKey("Item" + itemData[i].itemId.ToString()))
+            {
+                for (int j = 0; j < PlayerPrefs.GetInt("Item" + itemData[i].itemId.ToString()); j++)
+                    inventoryManager.Add(itemData[i]);
+            }
+        }
 
         player.transform.position = new Vector3(x, y, 0);
         questManager.questId = questId;

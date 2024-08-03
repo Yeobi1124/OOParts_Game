@@ -14,7 +14,7 @@ public class InventoryManager : MonoBehaviour
     public Button useButton;
     public TextMeshProUGUI itemDescription;
 
-    private void Start()
+    private void Awake()
     {
         items = new List<GameObject>();
         inventory = new List<ItemData>();

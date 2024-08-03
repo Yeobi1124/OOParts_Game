@@ -12,6 +12,4 @@ public class ItemData : ScriptableObject
     public int itemId;
     public int itemCount;
     public string itemDesc;
-
-
 }
