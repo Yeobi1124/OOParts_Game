@@ -5803,6 +5803,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 69312164f095fc74995275aaf28ac144, type: 2}
   - {fileID: 11400000, guid: 35cf151f167e5704cb740a496a0dfef5, type: 2}
   - {fileID: 11400000, guid: 970831f51d75f14499b4a259f87a4a5a, type: 2}
+  enemyData: {fileID: 0}
   player: {fileID: 179886719}
   fadeManager: {fileID: 499790366}
   mapManager: {fileID: 0}
@@ -5811,6 +5812,7 @@ MonoBehaviour:
   audioManager: {fileID: 1714098158}
   inventoryManager: {fileID: 397935308}
   poolManager: {fileID: 1183038426}
+  encounterManager: {fileID: 1720410741}
 --- !u!4 &193401849
 Transform:
   m_ObjectHideFlags: 0
@@ -19602,6 +19604,52 @@ MonoBehaviour:
     audioClip: {fileID: 0}
     volume: 0
     loop: 0
+--- !u!1 &1720410739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720410740}
+  - component: {fileID: 1720410741}
+  m_Layer: 0
+  m_Name: EncounterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1720410740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720410739}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00031280518, y: 0.0018814112, z: -0.00003749862}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839866895}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1720410741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720410739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45628f1b3da4c06409072a70dca5ff44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapDataList:
+  - {fileID: 11400000, guid: dec4b73baf371ee40bf91e53703689bd, type: 2}
 --- !u!1 &1721998810
 GameObject:
   m_ObjectHideFlags: 0
@@ -20110,6 +20158,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1508475208}
+  - {fileID: 1720410740}
   - {fileID: 685505004}
   - {fileID: 265417744}
   - {fileID: 23636492}

@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerManager : MovingObject
 {
-    public static PlayerManager Instance;
 
     public float runSpeed;
     private float applyRunSpeed;
@@ -19,20 +19,12 @@ public class PlayerManager : MovingObject
     private void Start()
     {
         queue = new Queue<string>();
-        if (Instance == null)
-        {
-            DontDestroyOnLoad(this.gameObject);
-            anim = GetComponent<Animator>();
-            boxCollider = GetComponent<BoxCollider2D>();
-            Instance = this;
-            base.anim.SetFloat("DirY", -1f);
-            base.anim.SetFloat("DirX", 1f);
-            dirVec = Vector3.down;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        anim = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        base.anim.SetFloat("DirY", -1f);
+        base.anim.SetFloat("DirX", 1f);
+        dirVec = Vector3.down;
+        
 
     }
     private void Update()
@@ -77,7 +69,7 @@ public class PlayerManager : MovingObject
 
     }
 
-        IEnumerator MoveCoroutine()
+    IEnumerator MoveCoroutine()
     {
         while (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
         {
@@ -137,10 +129,13 @@ public class PlayerManager : MovingObject
                 yield return new WaitForSeconds(0.01f);
             }
             currentWalkCount = 0;
+            Debug.Log("1");
+            GameManager.Instance.encounterManager.Encounter();
         }
 
         anim.SetBool("Walking", false);
         canMove = true;
     }
+
 }
 

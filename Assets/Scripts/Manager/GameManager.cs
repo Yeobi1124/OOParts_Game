@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     public string currentMapName;
     public Camera mainCamera;
     public List<ItemData> itemData;
+    public EnemyData enemyData;
 
     [Header("Managers")]
     public PlayerManager player;
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
     public AudioManager audioManager;
     public InventoryManager inventoryManager;
     public PoolManager poolManager;
+    public EncounterManager encounterManager;
 
     private void Awake()
     {
@@ -80,6 +83,11 @@ public class GameManager : MonoBehaviour
     public void GameExit()
     {
         Application.Quit();
+    }
+
+    public void LoadScene()
+    {
+        SceneManager.LoadScene("Combat");
     }
 
 }
