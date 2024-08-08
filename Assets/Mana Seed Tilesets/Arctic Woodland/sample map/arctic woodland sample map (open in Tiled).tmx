@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="33" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="24">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="33" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="24">
+ <editorsettings>
+  <export target="../arctic woodland sample map (open in Tiled)..tmx" format="tmx"/>
+ </editorsettings>
  <tileset firstgid="1" source="TSX files/arctic woodland.tsx"/>
  <tileset firstgid="193" source="TSX files/evergreen trees (winter, full snow) 80x112.tsx"/>
  <tileset firstgid="221" source="TSX files/bonus shadows.tsx"/>

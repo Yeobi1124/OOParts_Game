@@ -129,7 +129,6 @@ public class PlayerManager : MovingObject
                 yield return new WaitForSeconds(0.01f);
             }
             currentWalkCount = 0;
-            Debug.Log("1");
             GameManager.Instance.encounterManager.Encounter();
         }
 

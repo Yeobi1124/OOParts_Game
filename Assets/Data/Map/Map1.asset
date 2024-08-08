@@ -18,6 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 11f867d190df2d9429087c00c46e83c2, type: 2}
   - {fileID: 11400000, guid: db152c555545e474bb4b4c7c2490ada2, type: 2}
   encounterPer:
-  - 0.01
-  - 0.05
+  - 0.2
+  - 0.1
   - 0.1

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.9" tiledversion="1.9.1" name="collision" tilewidth="16" tileheight="16" tilecount="128" columns="16">
- <image source="../extras/collision &amp; alpha.png" width="256" height="128"/>
+<tileset version="1.10" tiledversion="1.11.0" name="collision" tilewidth="16" tileheight="16" tilecount="128" columns="16">
+ <image source="../../../_extras/collision &amp; alpha.png" width="256" height="128"/>
  <tile id="0">
   <objectgroup draworder="index" id="7">
    <object id="7" x="0" y="0" width="16" height="16"/>

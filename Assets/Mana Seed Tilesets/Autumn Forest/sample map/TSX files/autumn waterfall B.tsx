@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.9" tiledversion="1.9.1" name="autumn waterfall B" tilewidth="16" tileheight="16" tilecount="80" columns="8">
- <image source="../autumn animations/autumn waterfall B 16x16.png" width="128" height="160"/>
+<tileset version="1.10" tiledversion="1.11.0" name="autumn waterfall B" tilewidth="16" tileheight="16" tilecount="80" columns="8">
+ <image source="../../packaged/autumn animations/autumn waterfall B 16x16.png" width="128" height="160"/>
  <tile id="0">
   <animation>
    <frame tileid="0" duration="70"/>

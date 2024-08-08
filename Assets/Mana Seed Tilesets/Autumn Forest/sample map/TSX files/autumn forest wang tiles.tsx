@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.9" tiledversion="1.9.1" name="autumn forest wang tiles" tilewidth="16" tileheight="16" tilecount="2048" columns="64">
- <image source="../autumn sheets/autumn forest wang tiles.png" width="1024" height="512"/>
+<tileset version="1.10" tiledversion="1.11.0" name="autumn forest wang tiles" tilewidth="16" tileheight="16" tilecount="2048" columns="64">
+ <image source="../../packaged/autumn sheets/autumn forest wang tiles.png" width="1024" height="512"/>
  <wangsets>
   <wangset name="wang terrains (won't work with non-wang terrains)" type="corner" tile="10">
    <wangcolor name="dirt" color="#ff0000" tile="128" probability="1"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.9" tiledversion="1.9.1" name="autumn forest (leaves)" tilewidth="16" tileheight="16" tilecount="672" columns="32">
- <image source="../autumn sheets/autumn forest (leaves).png" width="512" height="336"/>
+<tileset version="1.10" tiledversion="1.11.0" name="autumn forest (leaves)" tilewidth="16" tileheight="16" tilecount="672" columns="32">
+ <image source="../../packaged/autumn sheets/autumn forest (leaves).png" width="512" height="336"/>
  <tile id="26">
   <animation>
    <frame tileid="26" duration="100"/>
