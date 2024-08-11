@@ -17,8 +17,8 @@ public class EncounterManager : MonoBehaviour
                 {
                     if (mapDataList[i].enemyData[j].enemyName == enemyName)
                     {
-                        GameManager.Instance.enemyData = mapDataList[i].enemyData[j];
-                        GameManager.Instance.LoadScene();
+                        //GameManager.Instance.enemyData = mapDataList[i].enemyData[j];
+                        GameManager.Instance.LoadScene(mapDataList[i].enemyData[j]);
                         return;
                     }
                 }

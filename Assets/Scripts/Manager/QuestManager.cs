@@ -5,25 +5,14 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    public static QuestManager instance;
     public int questId;
     public int questActionIndex;
     Dictionary<int, QuestData> questList;
 
     private void Awake()
     {
-        
-        if (instance == null)
-        {
-            DontDestroyOnLoad(this.gameObject);
-            instance = this;
-            questList = new Dictionary<int, QuestData>();
-            GenerateData();
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        questList = new Dictionary<int, QuestData>();
+        GenerateData();
     }
 
     void GenerateData()
