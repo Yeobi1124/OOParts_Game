@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 285056103}
   - component: {fileID: 285056102}
   m_Layer: 0
-  m_Name: border
+  m_Name: Border
   m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1065,6 +1065,54 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1091100329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091100331}
+  - component: {fileID: 1091100330}
+  m_Layer: 0
+  m_Name: CombatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1091100330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091100329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbc2125fa1ec0b498ef193788cd844c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 715332460}
+  skill: {fileID: 2136072545}
+  player: {fileID: 47946466}
+  pool: {fileID: 209470113}
+--- !u!4 &1091100331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091100329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0387256, y: -0.25236458, z: -0.04958958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1171881430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +1968,95 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1516341243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2271760417272439591, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_Name
+      value: Sandbag
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409524400676588697, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677316216393246400, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677316216393246400, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677316216393246400, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3fe3e4e348c136a4dbacb1c53cd422fc, type: 3}
+    - target: {fileID: 3677316216393246400, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3997429279482067122, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: id
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3997429279482067122, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: pos.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403343741611666804, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403343741611666804, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f67ff4dd02cd994e87a5d57a7865988, type: 3}
 --- !u!1 &1931340413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,13 +2220,12 @@ MonoBehaviour:
   isDefending: 0
   shield: {fileID: 1033666747}
   shieldRelease: {fileID: 1395640573}
-  player: {fileID: 47946466}
-  pool: {fileID: 209470113}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 715332461}
+  - {fileID: 1091100331}
   - {fileID: 209470112}
   - {fileID: 95645402}
   - {fileID: 2136072544}
@@ -2097,3 +2233,4 @@ SceneRoots:
   - {fileID: 925615050}
   - {fileID: 47946472}
   - {fileID: 285056104}
+  - {fileID: 1516341243}

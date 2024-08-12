@@ -27,7 +27,7 @@ using UnityEngine;
 - 축적된 배리어 방출 게이지 최대 도달 시 배리어 방출
 	- 방출 범위는 맵 전체
 
-
+현재 미구현인 파트
 - 스킬 강화에 따른 수치, 기능 변화
 	- 수치 변화 이벤트 발생 시 저장된 스펙 변화
 	- 기능 변화 이벤트 발생 시 기능 추가
@@ -56,10 +56,8 @@ public class SkillManager : MonoBehaviour
     public GameObject shield; //보호막 오브젝트
     public GameObject shieldRelease; //보호막 방출(공격) 시 데미지 범위 관련 오브젝트
 
-    [Header("Temp")] //임시로 사용하는 부분
-    public GameObject player; //플레이어 오브젝트
-    public CombatPoolManager pool;
-
+    GameObject player; //플레이어 오브젝트
+    CombatPoolManager pool;
     Camera cam; //Combat Scene의 Main Camera. 보호막 사용 시 마우스 위치를 불러오기 위해 사용
     
 
@@ -67,7 +65,9 @@ public class SkillManager : MonoBehaviour
         isCasting = false;
         isDefending = false;
 
-        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        player = CombatManager.instance.player;
+        pool = CombatManager.instance.pool;
+        cam = CombatManager.instance.cam;
 
         defenseGauge = defenseMaxGauge;
     }
@@ -138,17 +138,16 @@ public class SkillManager : MonoBehaviour
     }
     
     /// <summary>
-    /// 차지 게이지가 전부 채워져 공격 스킬 발동 시
+    /// 차지 게이지가 전부 채워져 공격 스킬 발동 시 pool Manager를 통해 투사체 생성, 투사체 발사
     /// </summary>
     private void AttackAct(){
         Vector2 playerPos = player.transform.position;
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         bool dir = playerPos.x < mousePos.x; //true: 오른쪽, false: 왼쪽
 
-        GameObject bullet = pool.MakeBullet(0);
-        
-        bullet.transform.position = playerPos;
-        bullet.GetComponent<Rigidbody2D>().velocity = (dir ? Vector2.right : Vector2.left) * attackSpeed;
+        BulletMove bulletMove = pool.Make(0, playerPos).GetComponent<BulletMove>();
+        bulletMove.Set(attackSpeed, dir ? Vector2.right : Vector2.left);
+        bulletMove.Act();
 
         attackCharge = 0;
     }

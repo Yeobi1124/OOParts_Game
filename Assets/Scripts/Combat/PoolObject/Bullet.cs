@@ -15,12 +15,9 @@ BulletData
 	- 추적 (예시)
 		- Bullet - 플레이어 방향 Unit Vector를 계산해서 이동하는 함수
 */
-public class Bullet : MonoBehaviour
+public class Bullet : PoolObject
 {
-    public int id;
     public int damage;
-    public Vector2 pos;
-    public int speed;
 
     private void OnTriggerExit2D(Collider2D other) {
         if(other.gameObject.tag == "Border")

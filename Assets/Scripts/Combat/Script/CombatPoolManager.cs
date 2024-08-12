@@ -20,7 +20,7 @@ public class CombatPoolManager : MonoBehaviour
         GameObject[] prefabs = Resources.LoadAll<GameObject>("Prefabs");
 
         foreach(GameObject prefab in prefabs){
-            int id = prefab.gameObject.GetComponent<Bullet>().id;
+            int id = prefab.gameObject.GetComponent<PoolObject>().id;
             prefabData.Add(id, prefab);
             pools.Add(id, new List<GameObject>());
         }
@@ -31,7 +31,7 @@ public class CombatPoolManager : MonoBehaviour
     /// </summary>
     /// <param name="id">prefab id</param>
     /// <returns>호출한 prefab의 GameObject</returns>
-    public GameObject MakeBullet(int id)
+    public GameObject Make(int id, Vector2 pos)
     {
         GameObject bullet = null;
 
@@ -51,6 +51,8 @@ public class CombatPoolManager : MonoBehaviour
             bullet = Instantiate(prefabData[id], transform);
             pools[id].Add(bullet);
         }
+
+        bullet.transform.position = pos;
 
         return bullet;
     }
