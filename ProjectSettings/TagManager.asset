@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Bullet
-  - Border
+  - Ground
+  - SkyGround
   layers:
   - Default
   - TransparentFX

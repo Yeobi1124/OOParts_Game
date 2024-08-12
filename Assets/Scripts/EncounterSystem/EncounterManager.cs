@@ -9,7 +9,6 @@ public class EncounterManager : MonoBehaviour
 
     public void EnterCombat(string enemyName)
     {
-        Debug.Log("8");
         for(int i =0;  i < mapDataList.Count; i++)
         {
             if (mapDataList[i].mapName == GameManager.Instance.currentMapName)
@@ -18,9 +17,8 @@ public class EncounterManager : MonoBehaviour
                 {
                     if (mapDataList[i].enemyData[j].enemyName == enemyName)
                     {
-                        GameManager.Instance.enemyData = mapDataList[i].enemyData[j];
-                        Debug.Log("9");
-                        GameManager.Instance.LoadScene();
+                        //GameManager.Instance.enemyData = mapDataList[i].enemyData[j];
+                        GameManager.Instance.LoadScene(mapDataList[i].enemyData[j]);
                         return;
                     }
                 }
@@ -29,27 +27,22 @@ public class EncounterManager : MonoBehaviour
     }
     public bool Encounter()
     {
-        Debug.Log("2");
         for(int i =0; i < mapDataList.Count; i++)
         {
             if (mapDataList[i].mapName == GameManager.Instance.currentMapName)
             {
                 MapData tempData = mapDataList[i];
-                Debug.Log("3");
                 for(int j =0; j < tempData.enemyData.Count; j++)
                 {
                     if (Random.Range(0f,1f) < tempData.encounterPer[j])
                     {
                         EnterCombat(mapDataList[i].enemyData[j].enemyName);
-                        Debug.Log("4");
                         return true;
                     }
                 }
-                Debug.Log("6");
                 return false;
             }
         }
-        Debug.Log("7");
         return false;
     }
 }

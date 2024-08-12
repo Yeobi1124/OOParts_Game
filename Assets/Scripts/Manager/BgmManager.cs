@@ -11,20 +11,6 @@ public class BgmManager : MonoBehaviour
     public float fadeDuration;
 
     private AudioSource audioSource;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            DontDestroyOnLoad(this.gameObject);
-            instance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();

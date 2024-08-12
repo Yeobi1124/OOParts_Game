@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public string currentMapName;
     public Camera mainCamera;
     public List<ItemData> itemData;
-    public EnemyData enemyData;
+    EnemyData enemyData;
 
     [Header("Managers")]
     public PlayerManager player;
@@ -23,23 +23,16 @@ public class GameManager : MonoBehaviour
     public InventoryManager inventoryManager;
     public PoolManager poolManager;
     public EncounterManager encounterManager;
-
+    DataExchangeManager exchangeManager;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            DontDestroyOnLoad(this.gameObject);
-            Instance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-
+        Instance = this;
+        exchangeManager = FindObjectOfType<DataExchangeManager>().GetComponent<DataExchangeManager>();
     }
-
     private void Start()
     {
+        exchangeManager.DataImmigrate();
+        GameSave(); // 전투가 끝났을 때 자동저장
         GameLoad();
     }
 
@@ -85,8 +78,9 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadScene()
+    public void LoadScene(EnemyData enemyData)
     {
+        exchangeManager.DataMigrate(questManager.questId, questManager.questActionIndex, enemyData);
         SceneManager.LoadScene("Combat");
     }
 

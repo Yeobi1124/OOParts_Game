@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 2c1dee3b2bf25cb469a6b72c807a6c89
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tall pine, repeatable trunk (summer)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf565abb16051d4a85d088490032a25
+      internalID: 1585643672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tall pine, repeatable trunk (summer)_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ef8b91e095e0f47b0a6d1a3abe2ca2
+      internalID: -2106092032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tall pine, repeatable trunk (summer)_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f19880840a65af47a6cb21fc11e513d
+      internalID: 910309768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tall pine, repeatable trunk (summer)_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f4f7b2d8f6d634baccdf194058f217
+      internalID: 1467364988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tall pine, repeatable trunk (summer)_0: 1585643672
+      tall pine, repeatable trunk (summer)_1: 1766421760
+      tall pine, repeatable trunk (summer)_10: -264974948
+      tall pine, repeatable trunk (summer)_11: -721257441
+      tall pine, repeatable trunk (summer)_12: -1941245027
+      tall pine, repeatable trunk (summer)_13: 984228770
+      tall pine, repeatable trunk (summer)_14: 1598047815
+      tall pine, repeatable trunk (summer)_15: 10808610
+      tall pine, repeatable trunk (summer)_16: 1539313555
+      tall pine, repeatable trunk (summer)_17: -1944431757
+      tall pine, repeatable trunk (summer)_18: -2050573131
+      tall pine, repeatable trunk (summer)_19: -1624190628
+      tall pine, repeatable trunk (summer)_2: 481130685
+      tall pine, repeatable trunk (summer)_20: -716566001
+      tall pine, repeatable trunk (summer)_21: 355147333
+      tall pine, repeatable trunk (summer)_22: -583658477
+      tall pine, repeatable trunk (summer)_23: -2106092032
+      tall pine, repeatable trunk (summer)_24: 1218337534
+      tall pine, repeatable trunk (summer)_25: 1409420997
+      tall pine, repeatable trunk (summer)_26: -1444975553
+      tall pine, repeatable trunk (summer)_27: -1441252728
+      tall pine, repeatable trunk (summer)_28: 1298918054
+      tall pine, repeatable trunk (summer)_29: 259015949
+      tall pine, repeatable trunk (summer)_3: -637208603
+      tall pine, repeatable trunk (summer)_30: 495145104
+      tall pine, repeatable trunk (summer)_31: -146884526
+      tall pine, repeatable trunk (summer)_32: -739601537
+      tall pine, repeatable trunk (summer)_33: -1109734514
+      tall pine, repeatable trunk (summer)_34: 910309768
+      tall pine, repeatable trunk (summer)_35: -1099051126
+      tall pine, repeatable trunk (summer)_36: 135432805
+      tall pine, repeatable trunk (summer)_37: 923321365
+      tall pine, repeatable trunk (summer)_38: 1858638750
+      tall pine, repeatable trunk (summer)_39: 1467364988
+      tall pine, repeatable trunk (summer)_4: -1459904365
+      tall pine, repeatable trunk (summer)_40: 461501212
+      tall pine, repeatable trunk (summer)_41: 1781825973
+      tall pine, repeatable trunk (summer)_42: -1614293344
+      tall pine, repeatable trunk (summer)_43: -1360540019
+      tall pine, repeatable trunk (summer)_44: 1511554281
+      tall pine, repeatable trunk (summer)_5: -162291044
+      tall pine, repeatable trunk (summer)_6: 1780252574
+      tall pine, repeatable trunk (summer)_7: 1502758130
+      tall pine, repeatable trunk (summer)_8: -1890599399
+      tall pine, repeatable trunk (summer)_9: -461347204
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
