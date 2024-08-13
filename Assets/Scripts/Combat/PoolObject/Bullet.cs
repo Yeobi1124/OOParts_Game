@@ -18,6 +18,7 @@ BulletData
 public class Bullet : PoolObject
 {
     public int damage;
+    public bool isEnemy; // 적의 bullet인가?
 
     private void OnTriggerExit2D(Collider2D other) {
         if(other.gameObject.tag == "Border")

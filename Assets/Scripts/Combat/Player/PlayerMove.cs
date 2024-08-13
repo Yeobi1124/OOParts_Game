@@ -8,35 +8,41 @@ using UnityEngine.Animations;
 public class PlayerMove : MonoBehaviour
 {
     public float maxSpeed;
+    public float onCastingSpeed; // isCasting 상태에서 최대 이동속도
     public float jumpPower;
     public float downJumpTime;
+    public PlayerStatus player;
 
     bool isJump; //점프중인가? 
     bool onSkyGround; //공중발판의 위인가?
 
     Rigidbody2D rigid;
     Animator anim;
-    Collider2D col;
 
     //PlatformScript skyGround; // skyGround 플랫폼 스크립트 가져옴 현재 필요없음
-    
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         //skyGround = FindObjectOfType<PlatformScript>(); 현재 필요없음
-        col = GetComponent<Collider2D>();
         isJump = false;
+    }
+
+    private void Start()
+    {
+        player.col = GetComponent<Collider2D>();
     }
     private void FixedUpdate()
     {
         float h = Input.GetAxisRaw("Horizontal");
         rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
 
-        if(rigid.velocity.x > maxSpeed)
-            rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
-        else if (rigid.velocity.x < - maxSpeed)
-            rigid.velocity = new Vector2(-maxSpeed, rigid.velocity.y);
+        float moveSpeed = CombatManager.instance.skill.isCasting ? onCastingSpeed : maxSpeed; // isCasting 인 경우 캐스팅 스피드, 아니면 기본 스피드
+        if(rigid.velocity.x > moveSpeed)
+            rigid.velocity = new Vector2(moveSpeed, rigid.velocity.y);
+        else if (rigid.velocity.x < -moveSpeed)
+            rigid.velocity = new Vector2(-moveSpeed, rigid.velocity.y);
     }
 
     void Update()
@@ -62,11 +68,11 @@ public class PlayerMove : MonoBehaviour
 
     private IEnumerator DownJump()
     {
-        col.enabled = false;
+        player.col.enabled = false;
 
         //대기 후 콜라이더를 다시 활성화
         yield return new WaitForSeconds(downJumpTime);
-        col.enabled = true;
+        player.col.enabled = true;
     }
 
 
@@ -74,13 +80,19 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("SkyGround"))
         {
-            Vector2 raycastOrigin = transform.position + Vector3.down * 0.50001f;
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, Vector2.down, 0.1f); // 슈퍼 점프 방지. 스프라이트 아랫쪽에 발판이 있는 경우에만 if문 실행
-            if (hit.collider != null)
+            Vector2 raycastOrigin = new Vector2(transform.position.x, transform.position.y - player.col.bounds.extents.y - 0.00001f);
+            RaycastHit2D[] hitArray = Physics2D.RaycastAll(raycastOrigin, Vector2.down, 0.1f);
+            // 슈퍼 점프 방지. 스프라이트 아랫쪽에 발판이 있는 경우에만 if문 실행
+
+            foreach(RaycastHit2D hit in hitArray)
             {
-                isJump = false;
-                onSkyGround = true;
+                if (hit.collider != null && hit.collider.CompareTag("SkyGround"))
+                {
+                    isJump = false;
+                    onSkyGround = true;
+                }
             }
+            
  
         }
         else if (collision.gameObject.CompareTag("Ground"))

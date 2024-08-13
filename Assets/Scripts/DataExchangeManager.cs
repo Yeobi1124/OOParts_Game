@@ -5,9 +5,15 @@ using UnityEngine;
 public class DataExchangeManager : MonoBehaviour
 {
     public static DataExchangeManager instance;
-    int questId;
-    int questActionIndex;
+
+    [Header("인게임정보")]
+    public int questId;
+    public int questActionIndex;
     EnemyData enemyData;
+
+    [Header("플레이어정보")]
+    public int playerMaxHealth;
+    public int playerHealth; 
 
     private void Awake()
     {
