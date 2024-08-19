@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da29b98509b5f24c8b9ef74ef55d787, type: 3}
   m_Name: Enemy 0
   m_EditorClassIdentifier: 
-  enemyName: Slime
-  enemyCode: 0
+  enemyName: SandBag
+  enemyCode: 100
   enemyType: 0
   dmg: 3
   hp: 20

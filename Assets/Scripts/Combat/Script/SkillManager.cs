@@ -50,8 +50,8 @@ public class SkillManager : MonoBehaviour
     public float defenseMaxGauge; //보호막 게이지 최댓값
     public float defenseGaugeFillSpeed; //보호막 게이지 증가 속도 (자연 회복)
     public float defenseGaugeReduceSpeed; //보호막 게이지 감소 속도 (사용 시 감소)
-    public int defenseReleaseGauge; //보호막 축적 게이지
-    public int defenseReleaseMaxGauge; //보호막 축적 게이지 최댓값
+    public float defenseReleaseGauge; //보호막 축적 게이지
+    public float defenseReleaseMaxGauge; //보호막 축적 게이지 최댓값
     public bool isDefending; //보호막 사용 중 인지 여부
     public GameObject shield; //보호막 오브젝트
     public GameObject shieldRelease; //보호막 방출(공격) 시 데미지 범위 관련 오브젝트
@@ -191,6 +191,7 @@ public class SkillManager : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(1);
 
+        defenseReleaseGauge = 0;
         shieldRelease.SetActive(false);
     }
 }
