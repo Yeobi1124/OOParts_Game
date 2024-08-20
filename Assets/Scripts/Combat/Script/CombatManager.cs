@@ -10,7 +10,8 @@ public class CombatManager : MonoBehaviour
     public SkillManager skill;
     public GameObject player;
     public CombatPoolManager pool;
-    // Start is called before the first frame update
+    public Enemyy target;
+    public Enemyy enemies;
     void Awake()
     {
         if(instance == null)

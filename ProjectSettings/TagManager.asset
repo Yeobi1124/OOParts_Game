@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - SkyGround
+  - Border
+  - Undefined
+  - Bullet
   layers:
   - Default
   - TransparentFX

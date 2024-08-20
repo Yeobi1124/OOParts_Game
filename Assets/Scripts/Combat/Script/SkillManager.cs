@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
 - 스킬 별 스펙
@@ -55,6 +56,9 @@ public class SkillManager : MonoBehaviour
     public bool isDefending; //보호막 사용 중 인지 여부
     public GameObject shield; //보호막 오브젝트
     public GameObject shieldRelease; //보호막 방출(공격) 시 데미지 범위 관련 오브젝트
+
+    [Header("UI")]
+    public GameObject chargeBar;
 
     GameObject player; //플레이어 오브젝트
     CombatPoolManager pool;
@@ -119,6 +123,7 @@ public class SkillManager : MonoBehaviour
     /// </summary>
     private void AttackCastOn(){
         isCasting = true;
+        chargeBar.SetActive(true);
     }
 
     /// <summary>
@@ -135,6 +140,7 @@ public class SkillManager : MonoBehaviour
     private void AttackCastCancel(){
         isCasting = false;
         attackCharge = 0;
+        chargeBar.SetActive(false);
     }
     
     /// <summary>
@@ -150,6 +156,7 @@ public class SkillManager : MonoBehaviour
         bulletMove.Act();
 
         attackCharge = 0;
+        chargeBar.SetActive(false);
     }
 
     /// <summary>
