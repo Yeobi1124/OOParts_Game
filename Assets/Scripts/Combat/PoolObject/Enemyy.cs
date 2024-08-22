@@ -8,5 +8,4 @@ public class Enemyy : PoolObject
     public int maxHealth;
     public int health;
     public int speed;
-    public bool isDead;
 }

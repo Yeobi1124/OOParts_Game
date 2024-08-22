@@ -4,20 +4,20 @@ using System;
 using UnityEngine;
 using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
-public class SandBag : Enemyy
+
+public class Boss : Enemyy
 {
     enum State {Stand, Attack, Dead};
     State state;
     
     private void Awake() {
 
+        state = State.Stand;
         health = maxHealth;
     }
 
     private void Start() {
         EventManager.Instance.AddEventListner(CombatEventType.Win, (CombatEventType Event_Type, Component component, object param) => {
-            Debug.Log("Win");
-            
             state = State.Dead;
             gameObject.SetActive(false);
             SceneManager.LoadScene("Story");
