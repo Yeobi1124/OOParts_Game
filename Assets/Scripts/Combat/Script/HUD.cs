@@ -1,49 +1,43 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    public enum TypeInfo {PlayerHp, PlayerHpText, EnemyHp, ShieldGauge, ShieldReleaseGauge}
-
-    public TypeInfo type;
-
-    TextMeshProUGUI text;
+    public enum InfoType { PlayerHealth, PlayerShield, TargetHP, ChargeBar };
+    public InfoType type;
     Slider slider;
-    private void Awake()
-    {
-        text = GetComponent<TextMeshProUGUI>();
+    PlayerStatus playerStatus;
+    SkillManager skillManager;
+    Enemyy target;
+
+    private void Awake() {
         slider = GetComponent<Slider>();
     }
 
-    private void LateUpdate()
+    // Update is called once per frame
+    void LateUpdate()
     {
-        switch(type)
-        {
-            case TypeInfo.PlayerHp:
-                float curHp = CombatManager.instance.player.GetComponent<PlayerStatus>().health;
-                float maxHp = CombatManager.instance.player.GetComponent<PlayerStatus>().maxHealth;
-                slider.value = curHp / maxHp;
+        switch(type){
+            case InfoType.PlayerHealth:
+                playerStatus = CombatManager.instance.player.GetComponent<PlayerStatus>();
+                slider.value = (float) playerStatus.health / playerStatus.maxHealth;
                 break;
-             case TypeInfo.PlayerHpText:
-                text.text= string.Format("Hp : {0}", CombatManager.instance.player.GetComponent<PlayerStatus>().health.ToString());
+            case InfoType.PlayerShield:
+                skillManager = CombatManager.instance.skill;
+                slider.value = (float) skillManager.defenseGauge / skillManager.defenseMaxGauge;
                 break;
-            case TypeInfo.EnemyHp:
-                float curEnHp = CombatManager.instance.enemy.GetComponent<Enemyy>().health;
-                float maxEnHp = CombatManager.instance.enemy.GetComponent<Enemyy>().maxHealth;
-                slider.value = curEnHp / maxEnHp;
+            case InfoType.TargetHP:
+                target = CombatManager.instance.target;
+                slider.value = (float) target.health / target.maxHealth;
                 break;
-            case TypeInfo.ShieldGauge:
-                float curShieldGauge = CombatManager.instance.skill.defenseGauge;
-                float maxShieldGauge = CombatManager.instance.skill.defenseMaxGauge;
-                slider.value = curShieldGauge / maxShieldGauge;
+            case InfoType.ChargeBar:
+                skillManager = CombatManager.instance.skill;
+                slider.value = (float) skillManager.attackCharge / skillManager.attackMaxCharge;
                 break;
-            case TypeInfo.ShieldReleaseGauge:
-                float curReleaseGauge = CombatManager.instance.skill.defenseReleaseGauge;
-                float maxReleaseGauge = CombatManager.instance.skill.defenseReleaseMaxGauge;
-                slider.value= curReleaseGauge / maxReleaseGauge;
+            default:
                 break;
         }
     }
