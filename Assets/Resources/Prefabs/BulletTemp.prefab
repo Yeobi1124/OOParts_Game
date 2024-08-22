@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  damage: 10
+  damage: 50
   isEnemy: 0
 --- !u!114 &-4932916749844341706
 MonoBehaviour:
