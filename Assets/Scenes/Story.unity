@@ -5858,6 +5858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 10
   questActionIndex: 0
+  currentQuest: {fileID: 1518616494}
 --- !u!4 &265417744
 Transform:
   m_ObjectHideFlags: 0
@@ -10355,6 +10356,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1839866895}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &686791303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 686791305}
+  - component: {fileID: 686791304}
+  m_Layer: 0
+  m_Name: SkillDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &686791304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686791303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691ab7a2eab27cb49bd9e6bf972ad892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - {fileID: 11400000, guid: 4d184073966e70a4aa2eebc5e03ded36, type: 2}
+--- !u!4 &686791305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686791303}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 412.2, y: 319.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692625398
 GameObject:
   m_ObjectHideFlags: 0
@@ -13354,6 +13401,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51161937c0a969746ad0bd0b7dbb9cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questId: 10
+  questActionIndex: 0
+  enemyData: {fileID: 0}
+  playerMaxHealth: 100
+  playerHealth: 100
 --- !u!1 &1465131647
 GameObject:
   m_ObjectHideFlags: 0
@@ -16412,6 +16464,7 @@ SceneRoots:
   - {fileID: 1714098157}
   - {fileID: 698837859}
   - {fileID: 265417744}
+  - {fileID: 686791305}
   - {fileID: 1839866895}
   - {fileID: 1481020722}
   - {fileID: 179886722}

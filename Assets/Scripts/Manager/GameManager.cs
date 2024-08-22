@@ -81,6 +81,16 @@ public class GameManager : MonoBehaviour
     public void LoadScene(EnemyData enemyData)
     {
         exchangeManager.DataMigrate(questManager.questId, questManager.questActionIndex, enemyData);
+        StartCoroutine(MapChangeCoroutine());
+        
+    }
+
+    IEnumerator MapChangeCoroutine()
+    {
+        fadeManager.FadeOut();
+        player.canMove = false;
+        yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration);
+        player.canMove = true;
         SceneManager.LoadScene("Combat");
     }
 

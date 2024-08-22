@@ -7,9 +7,9 @@ public class DataExchangeManager : MonoBehaviour
     public static DataExchangeManager instance;
 
     [Header("인게임정보")]
-    public int questId;
+    public int questId = 10;
     public int questActionIndex;
-    EnemyData enemyData;
+    public EnemyData enemyData;
 
     [Header("플레이어정보")]
     public int playerMaxHealth;
@@ -19,7 +19,6 @@ public class DataExchangeManager : MonoBehaviour
     {
         if(instance == null)
         {
-            questId = 10;
             DontDestroyOnLoad(this.gameObject);
             instance = this;
         }

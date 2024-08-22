@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da29b98509b5f24c8b9ef74ef55d787, type: 3}
   m_Name: Enemy 1
   m_EditorClassIdentifier: 
-  enemyName: Wolf
-  enemyCode: 1
+  enemyName: Turret
+  enemyCode: 200
   enemyType: 1
   dmg: 10
   hp: 40

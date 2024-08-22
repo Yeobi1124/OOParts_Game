@@ -31,14 +31,17 @@ public class EncounterManager : MonoBehaviour
         {
             if (mapDataList[i].mapName == GameManager.Instance.currentMapName)
             {
+                float perSum = 0;
                 MapData tempData = mapDataList[i];
-                for(int j =0; j < tempData.enemyData.Count; j++)
+                float randNum = Random.Range(0f, 1f);
+                for (int j =0; j < tempData.enemyData.Count; j++)
                 {
-                    if (Random.Range(0f,1f) < tempData.encounterPer[j])
+                    if (randNum < perSum + tempData.encounterPer[j])
                     {
                         EnterCombat(mapDataList[i].enemyData[j].enemyName);
                         return true;
                     }
+                    perSum += tempData.encounterPer[j];
                 }
                 return false;
             }

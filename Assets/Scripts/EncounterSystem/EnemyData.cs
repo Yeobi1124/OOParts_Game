@@ -9,7 +9,7 @@ public class EnemyData : ScriptableObject
 
     [Header("Info")]
     public string enemyName;
-    public string enemyCode;
+    public int enemyCode;
 
     [Header("stats")]
     public Type enemyType;

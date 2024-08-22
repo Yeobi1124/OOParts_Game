@@ -25,7 +25,8 @@ public class SandBag : Enemyy
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "Bullet"){
+        if(other.CompareTag("Bullet") && !other.GetComponent<Bullet>().isEnemy)
+        {
             health -= other.GetComponent<Bullet>().damage;
         }
     }
