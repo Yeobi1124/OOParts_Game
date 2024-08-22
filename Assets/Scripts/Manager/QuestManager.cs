@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using TMPro;
 using UnityEngine;
+
 
 public class QuestManager : MonoBehaviour
 {
     public int questId;
     public int questActionIndex;
+    public TextMeshProUGUI currentQuest;
     Dictionary<int, QuestData> questList;
 
     private void Awake()
     {
         questList = new Dictionary<int, QuestData>();
         GenerateData();
+    }
+    private void LateUpdate()
+    {
+        currentQuest.text = string.Format("현재 진행중인 퀘스트 : {0}",questList[questId].questName);
     }
 
     void GenerateData()

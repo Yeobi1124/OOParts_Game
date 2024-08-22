@@ -9,8 +9,9 @@ public class SkillData : ScriptableObject
 
     [Header("필수 정보")]
     public int id;
-    TypeInfo skillType;
-    [SerializeField] int level; // 레벨이 존재하지 않는 스킬이면, -1.
+    public TypeInfo skillType;
+    [SerializeField] int level;
+    [SerializeField] int maxLevel;
 
     [Header("조건적 정보")]
     float coolDown;
@@ -34,11 +35,12 @@ public class SkillData : ScriptableObject
 
     public void SetCoolDown(float reduction)
     {
-        coolDown *= reduction;
+        coolDown = Mathf.Max(0, coolDown - reduction);
     }
 
     public void LevelUp()
     {
-        level++;
+        if(level < maxLevel)
+            level++;
     }
 }

@@ -28,7 +28,7 @@ public class HUD : MonoBehaviour
                 slider.value = curHp / maxHp;
                 break;
              case TypeInfo.PlayerHpText:
-                text.text= CombatManager.instance.player.GetComponent<PlayerStatus>().health.ToString();
+                text.text= string.Format("Hp : {0}", CombatManager.instance.player.GetComponent<PlayerStatus>().health.ToString());
                 break;
             case TypeInfo.EnemyHp:
                 float curEnHp = CombatManager.instance.enemy.GetComponent<Enemyy>().health;

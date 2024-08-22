@@ -12,6 +12,7 @@ public class CombatManager : MonoBehaviour
     public CombatPoolManager pool;
     public DataExchangeManager exchange;
     public Enemyy enemy;
+    public GameObject border;
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,11 +23,12 @@ public class CombatManager : MonoBehaviour
 
     private void Start()
     {
-        int enemyId = exchange.enemyData.enemyCode;
+        int enemyId = exchange.enemyData.enemyCode; //enemyId는 100 200 300 ...
         int xpos = ((exchange.enemyData.enemyCode / 100) -1)* 50 ; // x 좌표  0 50 100 ...
         int ypos = (int)Mathf.Floor((float)exchange.enemyData.enemyCode / 1000) * 50; // y좌표 0 50 100 ...
-        enemy = pool.Make(exchange.enemyData.enemyCode, new Vector2(xpos, ypos)).GetComponent<Enemyy>(); // 적 생성
-        player.transform.Translate(xpos, ypos, 0); // 플레이어도 이동
+        border.transform.position = new Vector3(xpos, ypos, 0); // 보더 이동
+        enemy = pool.Make(exchange.enemyData.enemyCode, border.transform.position).GetComponent<Enemyy>(); // 적 생성
+        player.transform.Translate(border.transform.position); // 플레이어도 이동
         cam.transform.Translate(xpos, ypos, 0); // 카메라도 이동..
     }
 }

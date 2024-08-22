@@ -18,14 +18,7 @@ public class SkillDataManager : MonoBehaviour
         if(SkillDataDict.ContainsKey(key))
         {
             SkillData skill = SkillDataDict[key];
-            if(skill.GetLevel() == -1)
-            {
-                return;
-            }
-            else
-            {
-                skill.LevelUp();
-            }
+            skill.LevelUp();
         }
         else
         {
@@ -34,6 +27,8 @@ public class SkillDataManager : MonoBehaviour
                 if (data[i].id == key)
                 {
                     SkillDataDict.Add(key, data[i]);
+                    SkillDataDict[key].LevelUp();
+                    break;
                 }
             }
         }
