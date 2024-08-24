@@ -221,7 +221,7 @@ Animator:
   m_GameObject: {fileID: 47946466}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9d0bd98b4fe83c44097d80992a8f21bd, type: 2}
+  m_Controller: {fileID: 9100000, guid: de7aec36af66abe48ada4e2c12ec1215, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -252,7 +252,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d5b3017b34400f4b9df707c115be68a, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -312,11 +312,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a51e5baf9784d04b8f06478c03501df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 4
-  onCastingSpeed: 2
+  maxSpeed: 6
+  onCastingSpeed: 3
   jumpPower: 15
   downJumpTime: 0.4
   player: {fileID: 47946475}
+  isJump: 0
+  anim: {fileID: 0}
 --- !u!114 &47946475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,8 +337,8 @@ MonoBehaviour:
   exchangeManager: {fileID: 845843570}
   sprite: {fileID: 0}
   col: {fileID: 0}
-  origShader: {fileID: 2100000, guid: 5d5b3017b34400f4b9df707c115be68a, type: 2}
-  hitShader: {fileID: 2100000, guid: f7de0ff6cf0bbce4cb0bb79b9d8585ca, type: 2}
+  origShader: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  hitShader: {fileID: 2100000, guid: 896bdd9ca97fdbc4195fd4184867c443, type: 2}
 --- !u!70 &47946476
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -369,8 +371,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5}
-  m_Size: {x: 1, y: 1.6}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
   m_Direction: 0
 --- !u!61 &47946477
 BoxCollider2D:
@@ -544,8 +546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: c27de6d28efd9fc4ebe1e40c488d8112, type: 3}
+  - {fileID: 8300000, guid: 50ff3b52093664a44a05411b43b15cc9, type: 3}
+  - {fileID: 8300000, guid: 58d980a71d4d4774baca6a83b4386ee9, type: 3}
   fadeDuration: 0
 --- !u!4 &95645402
 Transform:
@@ -7619,15 +7622,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0915d2dc75c45488e9144c8487a603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 10
+  attackSpeed: 20
   attackRange: 0
   attackDamage: 50
   attackCharge: 0
   attackMaxCharge: 100
-  attackChargeSpeed: 50
+  attackChargeSpeed: 100
   isCasting: 0
   defenseRange: 2
-  defenseDist: 1
+  defenseDist: 2
   defenseGauge: 0
   defenseMaxGauge: 100
   defenseGaugeFillSpeed: 1

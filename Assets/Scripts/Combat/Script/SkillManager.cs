@@ -151,6 +151,10 @@ public class SkillManager : MonoBehaviour
         Vector2 playerPos = player.transform.position;
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         bool dir = playerPos.x < mousePos.x; //true: 오른쪽, false: 왼쪽
+        CombatManager.instance.player.GetComponent<SpriteRenderer>().flipX = !dir;
+        CombatManager.instance.player.GetComponent<PlayerMove>().anim.SetBool("isJump", false);
+        CombatManager.instance.player.GetComponent<PlayerMove>().anim.SetTrigger("Shoot");
+        StartCoroutine(ShootCancel());
 
         BulletMove bulletMove = pool.Make(0, playerPos + (Vector2)correctionValue).GetComponent<BulletMove>();
         bulletMove.Set(speed: attackSpeed, dir: dir ? Vector2.right : Vector2.left);
@@ -158,6 +162,13 @@ public class SkillManager : MonoBehaviour
 
         attackCharge = 0;
         chargeBar.SetActive(false);
+    }
+
+    IEnumerator ShootCancel()
+    {
+        yield return new WaitForSeconds(0.572f);
+        if(CombatManager.instance.player.GetComponent<PlayerMove>().isJump)
+            CombatManager.instance.player.GetComponent<PlayerMove>().anim.SetBool("isJump", true);
     }
 
     /// <summary>

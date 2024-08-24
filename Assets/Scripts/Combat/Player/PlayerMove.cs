@@ -13,11 +13,12 @@ public class PlayerMove : MonoBehaviour
     public float downJumpTime;
     public PlayerStatus player;
 
-    bool isJump; //점프중인가? 
+    public bool isJump; //점프중인가? 
     bool onSkyGround; //공중발판의 위인가?
 
     Rigidbody2D rigid;
-    Animator anim;
+    public Animator anim;
+    SpriteRenderer spriteRenderer;
 
     //PlatformScript skyGround; // skyGround 플랫폼 스크립트 가져옴 현재 필요없음
 
@@ -26,6 +27,7 @@ public class PlayerMove : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         //skyGround = FindObjectOfType<PlatformScript>(); 현재 필요없음
+        spriteRenderer = GetComponent<SpriteRenderer>();
         isJump = false;
     }
 
@@ -36,13 +38,37 @@ public class PlayerMove : MonoBehaviour
     private void FixedUpdate()
     {
         float h = Input.GetAxisRaw("Horizontal");
-        rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
 
-        float moveSpeed = CombatManager.instance.skill.isCasting ? onCastingSpeed : maxSpeed; // isCasting 인 경우 캐스팅 스피드, 아니면 기본 스피드
-        if(rigid.velocity.x > moveSpeed)
-            rigid.velocity = new Vector2(moveSpeed, rigid.velocity.y);
-        else if (rigid.velocity.x < -moveSpeed)
-            rigid.velocity = new Vector2(-moveSpeed, rigid.velocity.y);
+        if (h == 0f)
+        {
+            anim.SetBool("isRun", false);
+            anim.SetBool("isCharging", false);
+        }
+        else
+        {
+            anim.SetBool("isRun", true);
+            anim.SetBool("isCharging", false);
+        }
+
+        if (CombatManager.instance.skill.isCasting)
+        {
+            anim.SetBool("isCharging", true);
+        }
+
+        // 이동 속도 설정
+        float moveSpeed = CombatManager.instance.skill.isCasting ? onCastingSpeed : maxSpeed; // 캐스팅 중일 경우 캐스팅 속도, 아니면 기본 속도
+        //rigid.velocity = new Vector2(h * moveSpeed, rigid.velocity.y);
+        transform.Translate(new Vector2(h * moveSpeed * Time.fixedDeltaTime, 0));
+
+        // 캐릭터 방향 설정
+        if (h > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (h < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 
     void Update()
@@ -54,12 +80,14 @@ public class PlayerMove : MonoBehaviour
             {
                 if (Input.GetButtonDown("Jump"))
                 {
+                    anim.SetBool("isJump", true);
                     StartCoroutine(DownJump());
                     return;
                 }
             }
             if (Input.GetButtonDown("Jump")) // 공중점프
             {
+                anim.SetBool("isJump", true);
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 isJump = true;
             }
@@ -69,7 +97,6 @@ public class PlayerMove : MonoBehaviour
     private IEnumerator DownJump()
     {
         player.col.enabled = false;
-
         //대기 후 콜라이더를 다시 활성화
         yield return new WaitForSeconds(downJumpTime);
         player.col.enabled = true;
@@ -88,6 +115,7 @@ public class PlayerMove : MonoBehaviour
             {
                 if (hit.collider != null && hit.collider.CompareTag("SkyGround"))
                 {
+                    anim.SetBool("isJump", false);
                     isJump = false;
                     onSkyGround = true;
                 }
@@ -97,6 +125,7 @@ public class PlayerMove : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
+            anim.SetBool("isJump", false);
             isJump = false;
         }
 

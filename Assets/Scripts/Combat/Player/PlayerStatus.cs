@@ -41,7 +41,7 @@ public class PlayerStatus : MonoBehaviour
         {
             //���ӿ��� ó��
             //hangul ggae jim... I don't know upText
-
+            CombatManager.instance.player.GetComponent<PlayerMove>().anim.SetTrigger("Dead");
             EventManager.Instance.PostNotification(CombatEventType.Lose, this);
         }
     }
