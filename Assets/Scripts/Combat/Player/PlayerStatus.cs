@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStatus : MonoBehaviour
 {
-    [Header("ÇÃ·¹ÀÌ¾î Á¤º¸")]
-    public int maxHealth; // ÃÖ´ë Ã¼·Â
-    public int health; // ÇöÀç Ã¼·Â
+    [Header("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½")]
+    public int maxHealth; // ï¿½Ö´ï¿½ Ã¼ï¿½ï¿½
+    public int health; // ï¿½ï¿½ï¿½ï¿½ Ã¼ï¿½ï¿½
     public bool isHitted;
 
-    [Header("ÀÎ½ºÅÏ½º")]
+    [Header("ï¿½Î½ï¿½ï¿½Ï½ï¿½")]
     public DataExchangeManager exchangeManager;
     public SpriteRenderer sprite;
     public Collider2D col;
@@ -20,43 +20,48 @@ public class PlayerStatus : MonoBehaviour
     
     private void Awake()
     {
-        exchangeManager = FindObjectOfType<DataExchangeManager>().GetComponent<DataExchangeManager>(); // µ¥ÀÌÅÍ ±³È¯ ¸Å´ÏÀú¸¦ ÇÃ·¹ÀÌ¾îÁ¤º¸ ½ºÅ©¸³Æ®¿¡¼­ Á÷Á¢ ÀÎ½ºÅÏ½ºÈ­
+        exchangeManager = FindObjectOfType<DataExchangeManager>().GetComponent<DataExchangeManager>(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ ï¿½Å´ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½È­
         sprite = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
         isHitted = false;
 
         maxHealth = exchangeManager.playerMaxHealth;
-        health = exchangeManager.playerHealth; // ÀÌ´Ï¼È¶óÀÌÁ¦ÀÌ¼Ç
+        health = exchangeManager.playerHealth; // ï¿½Ì´Ï¼È¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½
     }
 
     private void Update()
     {
         if(health <= 0)
         {
-            //°ÔÀÓ¿À¹ö Ã³¸®
+            //ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Bullet") && other.gameObject.GetComponent<Bullet>().isEnemy && !isHitted) // ÇÇ°ÝÆÇÁ¤ // ½ºÇÁ¶óÀÌÆ®
+        if (other.CompareTag("Bullet") && other.gameObject.GetComponent<Bullet>().isEnemy && !isHitted) // ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
         {
             isHitted = true;
             OnDamaged(other.gameObject.GetComponent<Bullet>().damage);
             other.gameObject.SetActive(false);
         }
+        else if(other.CompareTag("UnblockBullet") && other.gameObject.GetComponent<Bullet>().isEnemy && !isHitted)
+        {
+            isHitted = true;
+            OnDamaged(other.gameObject.GetComponent<Bullet>().damage);
+        }
     }
 
     public void OnDamaged(int damage)
     {
-        //1.µ¥¹ÌÁö ÀÔÀ½
+        //1.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         health -= damage;
         StartCoroutine(OnDamaged());
     }
 
-    // ÇÇ°Ý ÄÚ·çÆ¾
+    // ï¿½Ç°ï¿½ ï¿½Ú·ï¿½Æ¾
     IEnumerator OnDamaged()
     {
-        //2. ½ºÇÁ¶óÀÌÆ® »ö º¯°æ 3. ¹«Àû ÆÇÁ¤ 4.È¤½Ã µð¹öÇÁ ±â´ÉÀ» ³Ö´Â´Ù. ÇÏ¸é µð¹öÇÁ±îÁö
+        //2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 3. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 4.È¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Â´ï¿½. ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         sprite.material = hitShader;
         yield return new WaitForSeconds(0.1f);
         sprite.material = origShader;

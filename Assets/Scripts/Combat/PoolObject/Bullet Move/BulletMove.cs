@@ -6,7 +6,7 @@ using UnityEngine;
 public class BulletMove : MonoBehaviour
 {
     protected Bullet bullet;
-    protected int speed;
+    public int speed;
     public virtual void Act(){}
-    public virtual void Set(int speed, Vector2? dir = null, GameObject target = null){}
+    public virtual void Set(int? speed = null, Vector2? dir = null, GameObject target = null){}
 }

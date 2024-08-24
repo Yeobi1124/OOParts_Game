@@ -6,6 +6,6 @@ using UnityEngine;
 public class Enemyy : PoolObject
 {
     public int maxHealth;
-    public int health;
+    public virtual int health {get; set;}
     public int speed;
 }

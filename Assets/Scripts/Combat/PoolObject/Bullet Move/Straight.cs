@@ -14,8 +14,19 @@ public class Straight : BulletMove
     public override void Act(){
         rigid.velocity = dir * speed;
     }
-    public override void Set(int speed, Vector2? dir, GameObject target = null){
-        this.speed = speed;
-        this.dir = (Vector2)dir;
+    public override void Set(int? speed = null, Vector2? dir = null, GameObject target = null){
+        if(speed != null)
+            this.speed = (int)speed;
+
+        if(target == null)
+            this.dir = (Vector2)dir;
+        else{
+            this.dir = (target.transform.position - gameObject.transform.position).normalized;
+        }
+
+        if(this.dir!=null){
+            transform.rotation = Quaternion.Euler(0, 0, Quaternion.FromToRotation(Vector3.up, this.dir).eulerAngles.z);
+
+        }
     }
 }

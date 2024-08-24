@@ -34,10 +34,10 @@ public class Turret : MonoBehaviour
     {
         Vector2 pos = transform.position;
         Vector2 playerPos = CombatManager.instance.player.transform.localPosition;
-        bool dir = pos.x < playerPos.x; //true: ¿À¸¥ÂÊ, false: ¿ÞÂÊ
+        bool dir = pos.x < playerPos.x; //true: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, false: ï¿½ï¿½ï¿½ï¿½
 
         BulletMove bulletMove = CombatManager.instance.pool.Make(1, pos).GetComponent<BulletMove>();
-        bulletMove.Set(attackSpeed, dir ? Vector2.right : Vector2.left);
+        bulletMove.Set(speed: attackSpeed, dir: dir ? Vector2.right : Vector2.left);
         bulletMove.Act();
     }
 

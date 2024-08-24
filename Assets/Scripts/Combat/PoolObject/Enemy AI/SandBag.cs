@@ -8,9 +8,24 @@ public class SandBag : Enemyy
 {
     enum State {Stand, Attack, Dead};
     State state;
+    public int _health;
+    public override int health {
+        get{return _health;}
+        set{
+            _health = value;
+            
+            if(_health <= 0 && state != State.Dead){
+                EventManager.Instance.PostNotification(CombatEventType.Win, this);
+            }
+        }}
     
-    private void Awake() {
+    [ContextMenu("Fill HP")]
+    void FillHP(){
+        health = maxHealth;
+    }
 
+    
+    private void OnEnable() {
         health = maxHealth;
     }
 
@@ -18,7 +33,7 @@ public class SandBag : Enemyy
         EventManager.Instance.AddEventListner(CombatEventType.Win, (CombatEventType Event_Type, Component component, object param) => {
             Debug.Log("Win");
             
-            state = State.Dead;
+            state = State.Stand;
             gameObject.SetActive(false);
             SceneManager.LoadScene("Story");
         });
@@ -32,9 +47,5 @@ public class SandBag : Enemyy
     }
 
     private void Update() {
-        if(health <= 0 && state != State.Dead){
-            Debug.Log("Post Event Win");
-            EventManager.Instance.PostNotification(CombatEventType.Win, this);
-        }
     }
 }

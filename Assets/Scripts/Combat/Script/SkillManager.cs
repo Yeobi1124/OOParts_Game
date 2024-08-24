@@ -152,7 +152,7 @@ public class SkillManager : MonoBehaviour
         bool dir = playerPos.x < mousePos.x; //true: 오른쪽, false: 왼쪽
 
         BulletMove bulletMove = pool.Make(0, playerPos).GetComponent<BulletMove>();
-        bulletMove.Set(attackSpeed, dir ? Vector2.right : Vector2.left);
+        bulletMove.Set(speed: attackSpeed, dir: dir ? Vector2.right : Vector2.left);
         bulletMove.Act();
 
         attackCharge = 0;
