@@ -12,6 +12,7 @@ public class Boss : Enemyy
     public int phase;
     public int _health;
     public bool actFinish;
+    public Vector3 correctionValue;
     public override int health {
         get{return _health;}
         set{
@@ -66,7 +67,7 @@ public class Boss : Enemyy
     private void SelectAttack(){
         float rand = UnityEngine.Random.value;
         float[] phase1Prob = new float[3] {0.40f, 0.40f, 0.20f};
-        float[] phase2Prob = new float[4] {0.25f, 0.25f, 0.25f, 0.25f};
+        float[] phase2Prob = new float[4] {0f, 0f, 0f, 1f};//{0.25f, 0.25f, 0.25f, 0.25f};
 
         actFinish = false;
 
@@ -105,7 +106,7 @@ public class Boss : Enemyy
     #region Boss Attack
     private void Arrow(){
         Debug.Log("Arrow Attack");
-        BulletMove bullet = CombatManager.instance.pool.Make(2, gameObject.transform.position).GetComponent<BulletMove>();
+        BulletMove bullet = CombatManager.instance.pool.Make(2, gameObject.transform.position + correctionValue).GetComponent<BulletMove>();
         bullet.Set(target: CombatManager.instance.player.gameObject);
         bullet.Act();
 
@@ -114,7 +115,7 @@ public class Boss : Enemyy
 
     private void FollowingArrow(){
         Debug.Log("Following Arrow Attack");
-        BulletMove bullet = CombatManager.instance.pool.Make(3, gameObject.transform.position).GetComponent<BulletMove>();
+        BulletMove bullet = CombatManager.instance.pool.Make(3, gameObject.transform.position + correctionValue).GetComponent<BulletMove>();
         bullet.Set(target: CombatManager.instance.player.gameObject);
         bullet.Act();
 
@@ -134,11 +135,11 @@ public class Boss : Enemyy
     }
 
     IEnumerator BeamAct(){
-        BulletMove bulletRange = CombatManager.instance.pool.Make(5, gameObject.transform.position).GetComponent<BulletMove>();
+        BulletMove bulletRange = CombatManager.instance.pool.Make(5, gameObject.transform.position + correctionValue).GetComponent<BulletMove>();
         bulletRange.Set(dir: transform.position.x > CombatManager.instance.player.transform.position.x ? Vector2.left : Vector2.right);
         bulletRange.Act();
 
-        BulletMove bullet = CombatManager.instance.pool.Make(4, gameObject.transform.position).GetComponent<BulletMove>();
+        BulletMove bullet = CombatManager.instance.pool.Make(4, gameObject.transform.position + correctionValue).GetComponent<BulletMove>();
         bullet.Set(dir: transform.position.x > CombatManager.instance.player.transform.position.x ? Vector2.left : Vector2.right);
         bullet.gameObject.SetActive(false);
 
@@ -152,15 +153,31 @@ public class Boss : Enemyy
 
     private void Grab(){
         Debug.Log("Grab Act");
-        BulletMove bulletRange = CombatManager.instance.pool.Make(6, gameObject.transform.position).GetComponent<BulletMove>();
-        bulletRange.Set(dir: transform.position.x > CombatManager.instance.player.transform.position.x ? Vector2.left : Vector2.right);
-        bulletRange.Act();
+        StartCoroutine(GrabAct());
+    }
+
+    IEnumerator GrabAct(){
+        Grab bullet = CombatManager.instance.pool.Make(6, gameObject.transform.position + correctionValue).GetComponent<Grab>();
+        bullet.Set(dir: transform.position.x > CombatManager.instance.player.transform.position.x ? Vector2.left : Vector2.right);
+        bullet.Act();
+
+        yield return new WaitUntil(() => !bullet.gameObject.activeSelf);
+
+        if(bullet.getSuccess)
+            StartCoroutine(GrabLinkedAttack());
 
         actFinish = true;
     }
 
-    private void GrabLinkedAttack(){
+    IEnumerator GrabLinkedAttack(){
+        Vector3 dir = transform.position.x > CombatManager.instance.player.transform.position.x ? Vector2.left : Vector2.right;
+        BulletMove bullet = CombatManager.instance.pool.Make(7, gameObject.transform.position + correctionValue).GetComponent<BulletMove>();
+        bullet.Set(dir: dir);
+        bullet.Act();
 
+        yield return new WaitForSeconds(1);
+
+        bullet.gameObject.SetActive(false);
     }
     #endregion
 }

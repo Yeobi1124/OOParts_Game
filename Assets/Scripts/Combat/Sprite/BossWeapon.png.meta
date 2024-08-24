@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8976d035a927d474caf414caf493efd9
+guid: 45b5f3d92a2471f47b84bd719460152c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BossWeapon (1)_0
+      name: BossWeapon_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ac5751b733c491469db53d96381c800
-      internalID: 712360407
+      spriteID: f985b011f5e1e1a46a220deeef311001
+      internalID: -570561972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossWeapon (1)_1
+      name: BossWeapon_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 37, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0835f34bc4f9e1d49bbf19d09e0e0f91
+      internalID: -1665651512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWeapon_2
       rect:
         serializedVersion: 2
         x: 0
@@ -132,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5738fa7eba48ed9449e8d9ba0bf75835
-      internalID: -893698946
+      spriteID: 7dcf48735ca72814d887cf1a24ad737b
+      internalID: -36875427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossWeapon (1)_2
+      name: BossWeapon_3
       rect:
         serializedVersion: 2
         x: 64
@@ -153,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f39fb1c41dfac64ba953a4b3f234410
-      internalID: 1737675264
+      spriteID: 4e5dcb6bcf59fd142974f8e9b04553db
+      internalID: -1752881895
       vertices: []
       indices: 
       edges: []
@@ -170,9 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BossWeapon (1)_0: 712360407
-      BossWeapon (1)_1: -893698946
-      BossWeapon (1)_2: 1737675264
+      BossWeapon_0: -570561972
+      BossWeapon_1: -1665651512
+      BossWeapon_2: -36875427
+      BossWeapon_3: -1752881895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -27,7 +27,9 @@ public class PlayerStatus : MonoBehaviour
 
         maxHealth = exchangeManager.playerMaxHealth;
         health = exchangeManager.playerHealth; // �̴ϼȶ������̼�
+    }
 
+    private void Start() {
         EventManager.Instance.AddEventListner(CombatEventType.Lose, (CombatEventType type, Component sender, object param) => {
             Debug.Log("Player Lose");
         });

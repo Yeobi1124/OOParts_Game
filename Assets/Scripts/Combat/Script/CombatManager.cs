@@ -22,17 +22,6 @@ public class CombatManager : MonoBehaviour
             instance = this;
         exchange = FindObjectOfType<DataExchangeManager>();
         BgmManager.instance.StopAllCoroutines();
-
-
-        EventManager.Instance.AddEventListner(CombatEventType.Win, (CombatEventType type, Component Sender, object param) => {
-            Debug.Log("Player Win");
-            SceneManager.LoadScene("Story");
-        });
-
-        EventManager.Instance.AddEventListner(CombatEventType.Lose, (CombatEventType type, Component Sender, object param) => {
-            Debug.Log("Player Lose");
-            SceneManager.LoadScene("Story");
-        });
     }
 
     private void Start()
@@ -45,5 +34,15 @@ public class CombatManager : MonoBehaviour
         player.transform.Translate(border.transform.position); // �÷��̾ �̵�
         cam.transform.Translate(xpos, ypos, 0); // ī�޶� �̵�..
         BgmManager.instance.Play(2);
+
+        EventManager.Instance.AddEventListner(CombatEventType.Win, (CombatEventType type, Component Sender, object param) => {
+            Debug.Log("Player Win");
+            SceneManager.LoadScene(1);
+        });
+
+        EventManager.Instance.AddEventListner(CombatEventType.Lose, (CombatEventType type, Component Sender, object param) => {
+            Debug.Log("Player Lose");
+            SceneManager.LoadScene("Story");
+        });
     }
 }

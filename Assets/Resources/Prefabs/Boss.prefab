@@ -167,3 +167,4 @@ MonoBehaviour:
   phase: 0
   _health: 0
   actFinish: 0
+  correctionValue: {x: 0, y: 0.5, z: 0}

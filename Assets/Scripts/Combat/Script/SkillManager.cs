@@ -59,6 +59,7 @@ public class SkillManager : MonoBehaviour
 
     [Header("UI")]
     public GameObject chargeBar;
+    public Vector3 correctionValue;
 
     GameObject player; //플레이어 오브젝트
     CombatPoolManager pool;
@@ -151,7 +152,7 @@ public class SkillManager : MonoBehaviour
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         bool dir = playerPos.x < mousePos.x; //true: 오른쪽, false: 왼쪽
 
-        BulletMove bulletMove = pool.Make(0, playerPos).GetComponent<BulletMove>();
+        BulletMove bulletMove = pool.Make(0, playerPos + (Vector2)correctionValue).GetComponent<BulletMove>();
         bulletMove.Set(speed: attackSpeed, dir: dir ? Vector2.right : Vector2.left);
         bulletMove.Act();
 
@@ -169,7 +170,7 @@ public class SkillManager : MonoBehaviour
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         shield.SetActive(true);
         shield.transform.localScale = new Vector3(defenseRange, shield.transform.localScale.y, 0);
-        shield.transform.position = player.transform.position;
+        shield.transform.position = player.transform.position + correctionValue;
         shield.transform.rotation = Quaternion.Euler(0, 0, Quaternion.FromToRotation(Vector3.up, mousePos - playerPos).eulerAngles.z);
         shield.transform.Translate(shield.transform.up * defenseDist, Space.World);
     }
