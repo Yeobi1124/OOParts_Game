@@ -12,8 +12,6 @@ public class Boss : Enemyy
     public int phase;
     public int _health;
     public bool actFinish;
-    
-    //[SerializeField]
     public override int health {
         get{return _health;}
         set{
@@ -24,6 +22,9 @@ public class Boss : Enemyy
             
             if(_health <= 0){
                 EventManager.Instance.PostNotification(CombatEventType.Win, this);
+            }
+            else if(_health <= maxHealth/2){
+                phase = 1;
             }
         }
     }
@@ -43,7 +44,7 @@ public class Boss : Enemyy
         EventManager.Instance.AddEventListner(CombatEventType.Win, (CombatEventType Event_Type, Component component, object param) => {
             state = State.Dead;
             gameObject.SetActive(false);
-            SceneManager.LoadScene("Story");
+            //SceneManager.LoadScene("Story");
         });
     }
 
@@ -57,14 +58,14 @@ public class Boss : Enemyy
         state = State.Stand;
 
         yield return new WaitUntil(() => actFinish);
-        yield return new WaitForSeconds(5 );
+        yield return new WaitForSeconds(5);
 
         SelectAttack();
     }
 
     private void SelectAttack(){
         float rand = UnityEngine.Random.value;
-        float[] phase1Prob = new float[3] {0.25f, 0.25f, 0.5f};
+        float[] phase1Prob = new float[3] {0.40f, 0.40f, 0.20f};
         float[] phase2Prob = new float[4] {0.25f, 0.25f, 0.25f, 0.25f};
 
         actFinish = false;
@@ -151,8 +152,15 @@ public class Boss : Enemyy
 
     private void Grab(){
         Debug.Log("Grab Act");
+        BulletMove bulletRange = CombatManager.instance.pool.Make(6, gameObject.transform.position).GetComponent<BulletMove>();
+        bulletRange.Set(dir: transform.position.x > CombatManager.instance.player.transform.position.x ? Vector2.left : Vector2.right);
+        bulletRange.Act();
 
         actFinish = true;
+    }
+
+    private void GrabLinkedAttack(){
+
     }
     #endregion
 }

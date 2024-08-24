@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CombatManager : MonoBehaviour
 {
@@ -10,27 +12,38 @@ public class CombatManager : MonoBehaviour
     public SkillManager skill;
     public GameObject player;
     public CombatPoolManager pool;
-    public DataExchangeManager exchange; //Ãß°¡
+    public DataExchangeManager exchange; //ï¿½ß°ï¿½
     public Enemyy target;
     public Enemyy enemies;
-    public GameObject border; // Ãß°¡
+    public GameObject border; // ï¿½ß°ï¿½
     void Awake()
     {
         if(instance == null)
             instance = this;
         exchange = FindObjectOfType<DataExchangeManager>();
         BgmManager.instance.StopAllCoroutines();
+
+
+        EventManager.Instance.AddEventListner(CombatEventType.Win, (CombatEventType type, Component Sender, object param) => {
+            Debug.Log("Player Win");
+            SceneManager.LoadScene("Story");
+        });
+
+        EventManager.Instance.AddEventListner(CombatEventType.Lose, (CombatEventType type, Component Sender, object param) => {
+            Debug.Log("Player Lose");
+            SceneManager.LoadScene("Story");
+        });
     }
 
     private void Start()
     {
-        int enemyId = exchange.enemyData.enemyCode; //enemyId´Â 100 200 300 ...
-        int xpos = ((exchange.enemyData.enemyCode / 100) - 1) * 50; // x ÁÂÇ¥  0 50 100 ...
-        int ypos = (int)Mathf.Floor((float)exchange.enemyData.enemyCode / 1000) * 50; // yÁÂÇ¥ 0 50 100 ...
-        border.transform.position = new Vector3(xpos, ypos, 0); // º¸´õ ÀÌµ¿
-        target = pool.Make(exchange.enemyData.enemyCode, border.transform.position).GetComponent<Enemyy>(); // Àû »ý¼º
-        player.transform.Translate(border.transform.position); // ÇÃ·¹ÀÌ¾îµµ ÀÌµ¿
-        cam.transform.Translate(xpos, ypos, 0); // Ä«¸Þ¶óµµ ÀÌµ¿..
+        int enemyId = exchange.enemyData.enemyCode; //enemyIdï¿½ï¿½ 100 200 300 ...
+        int xpos = ((exchange.enemyData.enemyCode / 100) - 1) * 50; // x ï¿½ï¿½Ç¥  0 50 100 ...
+        int ypos = (int)Mathf.Floor((float)exchange.enemyData.enemyCode / 1000) * 50; // yï¿½ï¿½Ç¥ 0 50 100 ...
+        border.transform.position = new Vector3(xpos, ypos, 0); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
+        target = pool.Make(exchange.enemyData.enemyCode, border.transform.position).GetComponent<Enemyy>(); // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        player.transform.Translate(border.transform.position); // ï¿½Ã·ï¿½ï¿½Ì¾îµµ ï¿½Ìµï¿½
+        cam.transform.Translate(xpos, ypos, 0); // Ä«ï¿½Þ¶ï¿½ ï¿½Ìµï¿½..
         BgmManager.instance.Play(2);
     }
 }

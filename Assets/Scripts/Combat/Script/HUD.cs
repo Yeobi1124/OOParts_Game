@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    public enum InfoType { PlayerHealth, PlayerShield, TargetHP, ChargeBar };
+    public enum InfoType { PlayerHealth, PlayerShield, PlayerShieldRelease, TargetHP, ChargeBar };
     public InfoType type;
     Slider slider;
     PlayerStatus playerStatus;
@@ -36,6 +36,10 @@ public class HUD : MonoBehaviour
             case InfoType.ChargeBar:
                 skillManager = CombatManager.instance.skill;
                 slider.value = (float) skillManager.attackCharge / skillManager.attackMaxCharge;
+                break;
+            case InfoType.PlayerShieldRelease:
+                skillManager = CombatManager.instance.skill;
+                slider.value = (float) skillManager.defenseReleaseGauge / skillManager.defenseReleaseMaxGauge;
                 break;
             default:
                 break;

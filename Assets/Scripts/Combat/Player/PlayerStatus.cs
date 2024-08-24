@@ -27,6 +27,10 @@ public class PlayerStatus : MonoBehaviour
 
         maxHealth = exchangeManager.playerMaxHealth;
         health = exchangeManager.playerHealth; // �̴ϼȶ������̼�
+
+        EventManager.Instance.AddEventListner(CombatEventType.Lose, (CombatEventType type, Component sender, object param) => {
+            Debug.Log("Player Lose");
+        });
     }
 
     private void Update()
@@ -34,6 +38,9 @@ public class PlayerStatus : MonoBehaviour
         if(health <= 0)
         {
             //���ӿ��� ó��
+            //hangul ggae jim... I don't know upText
+
+            EventManager.Instance.PostNotification(CombatEventType.Lose, this);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
