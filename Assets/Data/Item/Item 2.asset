@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aac024332186934db69fef4c54495ec, type: 3}
   m_Name: Item 2
   m_EditorClassIdentifier: 
-  Type: 0
-  itemName: Bow
+  Type: 1
+  itemName: "\uBC24"
   itemId: 102
-  itemCount: 2
-  itemDesc: 987654321
+  itemCount: 1
+  itemDesc: "\uC0C8\uBCBD\uC758 \uBC18\uB824"

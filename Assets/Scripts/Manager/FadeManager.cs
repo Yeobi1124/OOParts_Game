@@ -56,6 +56,5 @@ public class FadeManager : MonoBehaviour
         fadeImage.gameObject.SetActive(false);
         color.a = 0f;
         fadeImage.color = color;
-
     }
 }

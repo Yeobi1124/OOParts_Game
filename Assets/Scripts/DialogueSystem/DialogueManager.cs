@@ -54,7 +54,6 @@ public class DialogueManager : MonoBehaviour
         {
             QuestTalkIndex = GameManager.Instance.questManager.GetQuestTalkIndex(npcId);
             talkData = talkManager.GetTalk(npcId + QuestTalkIndex, talkIndex);
-
         }
 
         if (talkData == null)

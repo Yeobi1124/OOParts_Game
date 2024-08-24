@@ -23,17 +23,20 @@ public class GameManager : MonoBehaviour
     public InventoryManager inventoryManager;
     public PoolManager poolManager;
     public EncounterManager encounterManager;
+    public OrderManager orderManager;
     DataExchangeManager exchangeManager;
     private void Awake()
     {
         Instance = this;
         exchangeManager = FindObjectOfType<DataExchangeManager>().GetComponent<DataExchangeManager>();
+        orderManager.PreLoadCharacter();
     }
     private void Start()
     {
         exchangeManager.DataImmigrate();
         GameSave(); // 전투가 끝났을 때 자동저장
         GameLoad();
+        BgmManager.instance.Play(0);
     }
 
     public void GameSave()

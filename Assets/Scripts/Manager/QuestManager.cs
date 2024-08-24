@@ -24,9 +24,10 @@ public class QuestManager : MonoBehaviour
 
     void GenerateData()
     {
-        questList.Add(10, new QuestData("firstQuest", new int[] { 1000, 2000 }));
-        questList.Add(20, new QuestData("SecondQuest", new int[] { 1000, 2000 }));
-        questList.Add(30, new QuestData("QuestFinished", new int[] { 0 }));
+        questList.Add(10, new QuestData("먹을 것 구하기 \n오두막에서 체력을 채울 것을 찾아보자", new int[] { 8000 }));
+        questList.Add(20, new QuestData("여정 \n평원을 지나 마을로 가자.", new int[] { 1000, 1000, 1000}));
+        questList.Add(30, new QuestData("결전 \n아벨을 쓰러뜨리자", new int[] { 1000 }));
+        questList.Add(40, new QuestData("끝", new int[] { 0 }));
     }
 
     public int GetQuestTalkIndex(int id)

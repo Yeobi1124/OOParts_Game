@@ -11,9 +11,13 @@ public class BgmManager : MonoBehaviour
     public float fadeDuration;
 
     private AudioSource audioSource;
+    public void Awake()
+    {
+        instance = this;
+        audioSource = GetComponent<AudioSource>();
+    }
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
     }
 
     public void Play(int track)

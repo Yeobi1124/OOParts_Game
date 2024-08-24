@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item
   m_EditorClassIdentifier: 
   Type: 0
-  itemName: Sword
+  itemName: "\uCCAD\uC0AC\uACFC"
   itemId: 100
   itemCount: 1
-  itemDesc: "\uC9F1 \uC9F1 \uC13C \uAC80"
+  itemDesc: "\uC544\uC9C1 \uD478\uB974\uB984\uC744 \uAC04\uC9C1\uD558\uACE0 \uC788\uB2E4."
