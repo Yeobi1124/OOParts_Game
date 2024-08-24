@@ -1,0 +1,2778 @@
+fileFormatVersion: 2
+guid: 3e502b1b1ed1876449d9b79c233a3d73
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Mana Seed Character Base Outfit Canvas_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 839
+      y: 466
+      width: 14
+      height: 223
+    spriteID: 8a1678cedf153ed41bd8c78538fc99a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 839, y: 466}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.09389672}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 642
+      y: 694
+      width: 22
+      height: 213
+    spriteID: ade1a4f71140c604b87aac3677aab1fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 642, y: 694}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 672
+      y: 445
+      width: 22
+      height: 212
+    spriteID: f530f871ad614304ab1918ce102ab432
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 672, y: 445}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.091324195}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 731
+      y: 461
+      width: 20
+      height: 219
+    spriteID: 187a89dbdbf980a47aeb423c845a948c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 731, y: 461}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 703
+      y: 470
+      width: 20
+      height: 223
+    spriteID: 93a05daa163ce3b49ae4e4a149c91d97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 703, y: 470}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 506
+      y: 235
+      width: 28
+      height: 218
+    spriteID: 55ecbaaaf9444204eb29305360d29c59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 506, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.06550218}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 672
+      y: 665
+      width: 20
+      height: 229
+    spriteID: 2e7a7a4ef273a5f418d37818755e6db3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 672, y: 665}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.095022626}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 731
+      y: 4
+      width: 20
+      height: 221
+    spriteID: 38c513149f55d8045a4d5901f4164508
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 731, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.090090096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 787
+      y: 466
+      width: 18
+      height: 222
+    spriteID: 4de99e6c9d98eb24ca3eb25004453b22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 787, y: 466}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_11
+    originalName: 
+    pivot: {x: 0.47058824, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 813
+      y: 464
+      width: 17
+      height: 223
+    spriteID: 18fffab74f6fcd645a4380146b1489ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 813, y: 464}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 759
+      y: 453
+      width: 18
+      height: 223
+    spriteID: 28cef628a76a2d6488fd835f98e7ad48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 759, y: 453}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.090090096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 787
+      y: 696
+      width: 18
+      height: 222
+    spriteID: 615fb38e4742dd346ac8fd99dec06dfd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 787, y: 696}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_14
+    originalName: 
+    pivot: {x: 0.5294118, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 813
+      y: 695
+      width: 17
+      height: 223
+    spriteID: 3d95bbfd01bd3c342b7325f5ea4b6f9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 813, y: 695}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 703
+      y: 701
+      width: 20
+      height: 223
+    spriteID: 5422e79ae3af51a46bb1d4090a956cbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 703, y: 701}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: -0.08888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 703
+      y: 4
+      width: 20
+      height: 225
+    spriteID: aef82b761041de14ea8ce2912a3596d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 703, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: -0.08888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 703
+      y: 237
+      width: 20
+      height: 225
+    spriteID: 98d3fbcd7c725af46868526e661ea64a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 703, y: 237}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 610
+      y: 4
+      width: 24
+      height: 223
+    spriteID: 07ad89b6c166d64488e9d1f1fd37792d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 610, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 759
+      y: 684
+      width: 18
+      height: 223
+    spriteID: d314229005028924a8d03403bede436b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 759, y: 684}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 506
+      y: 687
+      width: 26
+      height: 224
+    spriteID: d9b8f5ced00424e47bb78880ee6170de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 506, y: 687}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 700
+      width: 26
+      height: 223
+    spriteID: 953d51f882de32343b2485ab22577ab5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 700}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 506
+      y: 4
+      width: 28
+      height: 223
+    spriteID: 984d55d9d2ef9b0429d1114edadb05c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 506, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 4
+      width: 26
+      height: 224
+    spriteID: b5cf81d8c025b574d8c7f58b509232ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 576
+      y: 4
+      width: 26
+      height: 223
+    spriteID: d88d33d54ba00f9408dd2351cd9e43f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 576, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 576
+      y: 235
+      width: 26
+      height: 223
+    spriteID: a63e0da2bbc06be4fa2e7ef9d81040b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 576, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: -0.08810572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 473
+      width: 30
+      height: 227
+    spriteID: c5649ffbabaee724496998574dff5bfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 473}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: -0.08810572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 708
+      width: 28
+      height: 227
+    spriteID: 90afb19ab7d6337488b7324cb386728c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 708}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: -0.08810572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 474
+      width: 34
+      height: 227
+    spriteID: 4aa1c1bb58d2e3a44bf2804f7c131ad4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 474}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: -0.08547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 690
+      width: 58
+      height: 234
+    spriteID: cf0f44c46ceae6b478462c1b5fafa533
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 690}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: -0.0877193}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 248
+      width: 64
+      height: 228
+    spriteID: b989ca4ecf0156f43a37620330992e2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 248}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 464
+      width: 64
+      height: 218
+    spriteID: 4a6f6e85da6d97340aed26dbaa7265aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 464}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 610
+      y: 703
+      width: 22
+      height: 224
+    spriteID: 4a13523a845750f42a5b57c5a3d83587
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 610, y: 703}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: -0.090909086}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 232
+      width: 40
+      height: 220
+    spriteID: 31dc082926df49b469b8439b8942f961
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 232}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: -0.090909086}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 460
+      width: 40
+      height: 220
+    spriteID: 8ccb2d5fec08404418328544e9898770
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 460}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: -0.09049774}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 472
+      width: 44
+      height: 221
+    spriteID: 6777f4f65956b9f488894e04fc3102d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 472}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: -0.08035715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 4
+      width: 48
+      height: 224
+    spriteID: 69ec492c39de86d45ac6d77846917e2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: -0.088785045}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 4
+      width: 38
+      height: 214
+    spriteID: e212297967735a846804babce59c59ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 374, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: -0.086363636}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 4
+      width: 42
+      height: 220
+    spriteID: e553f78677e537a46a16543decda7519
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: -0.08510638}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 230
+      width: 30
+      height: 235
+    spriteID: 15bbfd41bad9c2b42bfbd25cd888da1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 230}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: -0.08510638}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 610
+      y: 460
+      width: 22
+      height: 235
+    spriteID: 1d7fba55c2c274141bc1fafa4c8feeae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 610, y: 460}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: -0.09049774}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 235
+      width: 64
+      height: 221
+    spriteID: 6691ff2ad2af28b42b382d197eda3d84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 4
+      width: 64
+      height: 223
+    spriteID: 9e96e33e677b94b42b2340c61446ac08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: -0.084745765}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 64
+      height: 236
+    spriteID: 6168c6275e9ded94db32a5a489765ecd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 727
+      width: 64
+      height: 224
+    spriteID: 3b9c94419b0e02442ba78b3f0ec71217
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 727}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: -0.08510638}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 484
+      width: 62
+      height: 235
+    spriteID: 974224a9e86cc264b99b2cdc5b6f2ecf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 484}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_76
+    originalName: 
+    pivot: {x: 0.48936167, y: -0.08510638}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 479
+      width: 47
+      height: 235
+    spriteID: 2d42bfe1b3e9f704db618096ab2f9291
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 479}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: -0.11009174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 4
+      width: 48
+      height: 218
+    spriteID: 55b13b4862c29814e9dfd9c09872bf9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_78
+    originalName: 
+    pivot: {x: 0.5, y: -0.08888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 722
+      width: 48
+      height: 225
+    spriteID: 26ebc9c55b99ee540a279caea3416665
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 722}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_79
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 236
+      width: 48
+      height: 224
+    spriteID: 96c30cd37fc102f4b8bbd825b54cce0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 236}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: -0.08558559}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 468
+      width: 48
+      height: 222
+    spriteID: af63bd251785e144eba078a24ac8c710
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 468}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_81
+    originalName: 
+    pivot: {x: 0.5, y: -0.0852018}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 4
+      width: 56
+      height: 223
+    spriteID: 6545935bc966f244fae2a184b3f4eae6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_86
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 787
+      y: 4
+      width: 18
+      height: 223
+    spriteID: 18328810280e6d7409f16d14c2c0bbe4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 787, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_87
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 839
+      y: 697
+      width: 14
+      height: 223
+    spriteID: a8f9e5c0eb0868a499e4b30e241fc030
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 839, y: 697}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_88
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 864
+      y: 4
+      width: 14
+      height: 223
+    spriteID: df88935ab8cc71f4c97b8aac3b9a501d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 864, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_89
+    originalName: 
+    pivot: {x: 0.5, y: -0.090909086}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 731
+      y: 233
+      width: 20
+      height: 220
+    spriteID: 65bb7d7d095eccc4bbca13d24a001970
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 731, y: 233}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_90
+    originalName: 
+    pivot: {x: 0.5, y: -0.090909086}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 759
+      y: 4
+      width: 20
+      height: 209
+    spriteID: c8803b51683099848991e75acebb3dd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 759, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_91
+    originalName: 
+    pivot: {x: 0.5, y: -0.0921659}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 610
+      y: 235
+      width: 24
+      height: 217
+    spriteID: 2df35322fdd8c1946a9ed562805e086a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 610, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: -0.0921659}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 731
+      y: 688
+      width: 20
+      height: 217
+    spriteID: 2dc9d884eeb5a7f438993485d5451a42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 731, y: 688}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_93
+    originalName: 
+    pivot: {x: 0.5, y: -0.07589286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 759
+      y: 221
+      width: 18
+      height: 224
+    spriteID: 0d07e8a86d6e4e1429b4a2a84a22a749
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 759, y: 221}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 864
+      y: 235
+      width: 14
+      height: 223
+    spriteID: 90f805ac477c45141a8bfa8ebb1aecbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 864, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 506
+      y: 461
+      width: 28
+      height: 218
+    spriteID: a59a6e6f40588f6478e34353b77e82e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 506, y: 461}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -0.090090096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 813
+      y: 4
+      width: 18
+      height: 222
+    spriteID: 920dc983edc2ae149829028627ab732e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 813, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_17
+    originalName: 
+    pivot: {x: 0.47058824, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 839
+      y: 4
+      width: 17
+      height: 223
+    spriteID: a16a3c70a2e0bb7498bc534d5ed50b16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 839, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: -0.090090096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 813
+      y: 234
+      width: 18
+      height: 222
+    spriteID: 25b8a9ade0f17594aa60eb881b24b358
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 813, y: 234}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_20
+    originalName: 
+    pivot: {x: 0.5294118, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 839
+      y: 235
+      width: 17
+      height: 223
+    spriteID: 3b62d0d498ccc9741b01ab9d87ddfe66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 839, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_24
+    originalName: 
+    pivot: {x: 0.5217391, y: -0.09389672}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 672
+      y: 4
+      width: 23
+      height: 213
+    spriteID: cca672174cdcc2c45a030c7031ff0db8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 672, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_25
+    originalName: 
+    pivot: {x: 0.5217391, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 672
+      y: 225
+      width: 23
+      height: 212
+    spriteID: 324869b4db45eb249b296e51e30a5167
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 672, y: 225}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_26
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.091324195}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 642
+      y: 467
+      width: 22
+      height: 219
+    spriteID: 163f064c0fc336845aefe8f5a9451082
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 642, y: 467}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_27
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 642
+      y: 236
+      width: 22
+      height: 223
+    spriteID: 01caa0415a88fbc42972221aeb2d9c10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 642, y: 236}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 787
+      y: 235
+      width: 18
+      height: 223
+    spriteID: b76df9d3e168891468a1062993830fff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 787, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 709
+      width: 34
+      height: 218
+    spriteID: 818032e6fe2d1fd4c871f42e2cd1579e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 709}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: -0.06437768}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 233
+      width: 34
+      height: 233
+    spriteID: c4553e51a2849f24abcffbb568f2c6bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 233}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: -0.095022626}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 4
+      width: 36
+      height: 221
+    spriteID: 15412906be9839248807a4d63673b99d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 4
+      width: 34
+      height: 218
+    spriteID: 913ab8720c467f24fb88fd79a30581cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 236
+      width: 26
+      height: 224
+    spriteID: 9322c3770d96f8143878bc36f8087cba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 236}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 576
+      y: 466
+      width: 26
+      height: 223
+    spriteID: fc861ff91fb9dd1429d433a3f68cc127
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 576, y: 466}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 468
+      width: 26
+      height: 224
+    spriteID: 100bd3a67eb9cc34f8a6c2d43ee82802
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 468}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 576
+      y: 697
+      width: 26
+      height: 223
+    spriteID: 388066ed1038135409baed037b6fdf92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 576, y: 697}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 864
+      y: 466
+      width: 14
+      height: 223
+    spriteID: 404f084168da3c14d8b4efbabb46e936
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 864, y: 466}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 864
+      y: 697
+      width: 14
+      height: 223
+    spriteID: b5e14d30b8a674847a7d4588400ce12b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 864, y: 697}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: -0.090909086}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 701
+      width: 44
+      height: 220
+    spriteID: 9dd57c4faa1161c4f9d93d15564fd019
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 701}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: -0.090909086}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 698
+      width: 48
+      height: 220
+    spriteID: 84deadc229434ae4a855c2dd4c4f98ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 698}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 886
+      y: 4
+      width: 14
+      height: 223
+    spriteID: 053c14591fb05e34d8e4da942166e48c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 886, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: -0.08928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 642
+      y: 4
+      width: 22
+      height: 224
+    spriteID: 0e7bd71aa0dc63f439e8f5b96370f256
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 642, y: 4}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: -0.08482143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 226
+      width: 36
+      height: 224
+    spriteID: 46c48e0dd16cf044390e0cf6821b569d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 374, y: 226}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: -0.08482143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 458
+      width: 36
+      height: 224
+    spriteID: 81d00d96c574c544c861c76669375edf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 374, y: 458}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: -0.08482143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 690
+      width: 36
+      height: 224
+    spriteID: 3a03ea66e3a1b3c4aa513472f7e2ec94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 374, y: 690}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: -0.08482143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 688
+      width: 38
+      height: 224
+    spriteID: 17736c449c318014985708d60525a855
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 688}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 886
+      y: 235
+      width: 14
+      height: 223
+    spriteID: bd225c46a44c5084680eb759a11b4ca0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 886, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: -0.084745765}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 235
+      width: 50
+      height: 236
+    spriteID: 94461fec45e06474db43cf3eeeddfe8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 235}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: -0.08547009}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 230
+      width: 42
+      height: 234
+    spriteID: 685bdce805b8c224bb7ad0f6c3060756
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 230}
+  - name: Mana Seed Character Base Outfit Canvas_Frame_85
+    originalName: 
+    pivot: {x: 0.5, y: -0.0896861}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 886
+      y: 466
+      width: 14
+      height: 223
+    spriteID: 78166dadfa7ac4249a7404027a2fc65e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 886, y: 466}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -265275499
+    name: Mana Seed Character Base Outfit Canvas
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Mana Seed Character Base Outfit Canvas_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: 8a1678cedf153ed41bd8c78538fc99a3
+    - name: Mana Seed Character Base Outfit Canvas_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 21
+        y: 20
+        width: 22
+        height: 213
+      spriteId: ade1a4f71140c604b87aac3677aab1fc
+    - name: Mana Seed Character Base Outfit Canvas_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 21
+        y: 20
+        width: 22
+        height: 212
+      spriteId: f530f871ad614304ab1918ce102ab432
+    - name: Mana Seed Character Base Outfit Canvas_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 20
+        width: 20
+        height: 219
+      spriteId: 187a89dbdbf980a47aeb423c845a948c
+    - name: Mana Seed Character Base Outfit Canvas_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 20
+        width: 20
+        height: 223
+      spriteId: 93a05daa163ce3b49ae4e4a149c91d97
+    - name: Mana Seed Character Base Outfit Canvas_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 20
+        width: 28
+        height: 218
+      spriteId: 55ecbaaaf9444204eb29305360d29c59
+    - name: Mana Seed Character Base Outfit Canvas_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 15
+        width: 20
+        height: 229
+      spriteId: 2e7a7a4ef273a5f418d37818755e6db3
+    - name: Mana Seed Character Base Outfit Canvas_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 21
+        width: 20
+        height: 221
+      spriteId: 38c513149f55d8045a4d5901f4164508
+    - name: Mana Seed Character Base Outfit Canvas_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 222
+      spriteId: 4de99e6c9d98eb24ca3eb25004453b22
+    - name: Mana Seed Character Base Outfit Canvas_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 20
+        width: 17
+        height: 223
+      spriteId: 18fffab74f6fcd645a4380146b1489ad
+    - name: Mana Seed Character Base Outfit Canvas_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 223
+      spriteId: 28cef628a76a2d6488fd835f98e7ad48
+    - name: Mana Seed Character Base Outfit Canvas_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 222
+      spriteId: 615fb38e4742dd346ac8fd99dec06dfd
+    - name: Mana Seed Character Base Outfit Canvas_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 17
+        height: 223
+      spriteId: 3d95bbfd01bd3c342b7325f5ea4b6f9b
+    - name: Mana Seed Character Base Outfit Canvas_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 20
+        width: 20
+        height: 223
+      spriteId: 5422e79ae3af51a46bb1d4090a956cbf
+    - name: Mana Seed Character Base Outfit Canvas_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 20
+        width: 20
+        height: 225
+      spriteId: aef82b761041de14ea8ce2912a3596d9
+    - name: Mana Seed Character Base Outfit Canvas_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 20
+        width: 20
+        height: 225
+      spriteId: 98d3fbcd7c725af46868526e661ea64a
+    - name: Mana Seed Character Base Outfit Canvas_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 24
+        height: 223
+      spriteId: 07ad89b6c166d64488e9d1f1fd37792d
+    - name: Mana Seed Character Base Outfit Canvas_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 223
+      spriteId: d314229005028924a8d03403bede436b
+    - name: Mana Seed Character Base Outfit Canvas_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 224
+      spriteId: d9b8f5ced00424e47bb78880ee6170de
+    - name: Mana Seed Character Base Outfit Canvas_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 223
+      spriteId: 953d51f882de32343b2485ab22577ab5
+    - name: Mana Seed Character Base Outfit Canvas_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 20
+        width: 28
+        height: 223
+      spriteId: 984d55d9d2ef9b0429d1114edadb05c4
+    - name: Mana Seed Character Base Outfit Canvas_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 224
+      spriteId: b5cf81d8c025b574d8c7f58b509232ad
+    - name: Mana Seed Character Base Outfit Canvas_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 223
+      spriteId: d88d33d54ba00f9408dd2351cd9e43f7
+    - name: Mana Seed Character Base Outfit Canvas_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 223
+      spriteId: a63e0da2bbc06be4fa2e7ef9d81040b6
+    - name: Mana Seed Character Base Outfit Canvas_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 17
+        y: 20
+        width: 30
+        height: 227
+      spriteId: c5649ffbabaee724496998574dff5bfb
+    - name: Mana Seed Character Base Outfit Canvas_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 20
+        width: 28
+        height: 227
+      spriteId: 90afb19ab7d6337488b7324cb386728c
+    - name: Mana Seed Character Base Outfit Canvas_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 15
+        y: 20
+        width: 34
+        height: 227
+      spriteId: 4aa1c1bb58d2e3a44bf2804f7c131ad4
+    - name: Mana Seed Character Base Outfit Canvas_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 20
+        width: 58
+        height: 234
+      spriteId: cf0f44c46ceae6b478462c1b5fafa533
+    - name: Mana Seed Character Base Outfit Canvas_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 20
+        width: 64
+        height: 228
+      spriteId: b989ca4ecf0156f43a37620330992e2c
+    - name: Mana Seed Character Base Outfit Canvas_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 20
+        width: 64
+        height: 218
+      spriteId: 4a6f6e85da6d97340aed26dbaa7265aa
+    - name: Mana Seed Character Base Outfit Canvas_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 21
+        y: 20
+        width: 22
+        height: 224
+      spriteId: 4a13523a845750f42a5b57c5a3d83587
+    - name: Mana Seed Character Base Outfit Canvas_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 20
+        width: 40
+        height: 220
+      spriteId: 31dc082926df49b469b8439b8942f961
+    - name: Mana Seed Character Base Outfit Canvas_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 20
+        width: 40
+        height: 220
+      spriteId: 8ccb2d5fec08404418328544e9898770
+    - name: Mana Seed Character Base Outfit Canvas_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 10
+        y: 20
+        width: 44
+        height: 221
+      spriteId: 6777f4f65956b9f488894e04fc3102d8
+    - name: Mana Seed Character Base Outfit Canvas_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 18
+        width: 48
+        height: 224
+      spriteId: 69ec492c39de86d45ac6d77846917e2d
+    - name: Mana Seed Character Base Outfit Canvas_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 13
+        y: 19
+        width: 38
+        height: 214
+      spriteId: e212297967735a846804babce59c59ef
+    - name: Mana Seed Character Base Outfit Canvas_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 19
+        width: 42
+        height: 220
+      spriteId: e553f78677e537a46a16543decda7519
+    - name: Mana Seed Character Base Outfit Canvas_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 17
+        y: 20
+        width: 30
+        height: 235
+      spriteId: 15bbfd41bad9c2b42bfbd25cd888da1e
+    - name: Mana Seed Character Base Outfit Canvas_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 21
+        y: 20
+        width: 22
+        height: 235
+      spriteId: 1d7fba55c2c274141bc1fafa4c8feeae
+    - name: Mana Seed Character Base Outfit Canvas_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 20
+        width: 64
+        height: 221
+      spriteId: 6691ff2ad2af28b42b382d197eda3d84
+    - name: Mana Seed Character Base Outfit Canvas_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 20
+        width: 64
+        height: 223
+      spriteId: 9e96e33e677b94b42b2340c61446ac08
+    - name: Mana Seed Character Base Outfit Canvas_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 20
+        width: 64
+        height: 236
+      spriteId: 6168c6275e9ded94db32a5a489765ecd
+    - name: Mana Seed Character Base Outfit Canvas_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 20
+        width: 64
+        height: 224
+      spriteId: 3b9c94419b0e02442ba78b3f0ec71217
+    - name: Mana Seed Character Base Outfit Canvas_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 20
+        width: 62
+        height: 235
+      spriteId: 974224a9e86cc264b99b2cdc5b6f2ecf
+    - name: Mana Seed Character Base Outfit Canvas_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 20
+        width: 47
+        height: 235
+      spriteId: 2d42bfe1b3e9f704db618096ab2f9291
+    - name: Mana Seed Character Base Outfit Canvas_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 24
+        width: 48
+        height: 218
+      spriteId: 55b13b4862c29814e9dfd9c09872bf9c
+    - name: Mana Seed Character Base Outfit Canvas_Frame_78
+      frameIndex: 78
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 20
+        width: 48
+        height: 225
+      spriteId: 26ebc9c55b99ee540a279caea3416665
+    - name: Mana Seed Character Base Outfit Canvas_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 20
+        width: 48
+        height: 224
+      spriteId: 96c30cd37fc102f4b8bbd825b54cce0b
+    - name: Mana Seed Character Base Outfit Canvas_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 19
+        width: 48
+        height: 222
+      spriteId: af63bd251785e144eba078a24ac8c710
+    - name: Mana Seed Character Base Outfit Canvas_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 4
+        y: 19
+        width: 56
+        height: 223
+      spriteId: 6545935bc966f244fae2a184b3f4eae6
+    - name: Mana Seed Character Base Outfit Canvas_Frame_86
+      frameIndex: 86
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 223
+      spriteId: 18328810280e6d7409f16d14c2c0bbe4
+    - name: Mana Seed Character Base Outfit Canvas_Frame_87
+      frameIndex: 87
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: a8f9e5c0eb0868a499e4b30e241fc030
+    - name: Mana Seed Character Base Outfit Canvas_Frame_88
+      frameIndex: 88
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: df88935ab8cc71f4c97b8aac3b9a501d
+    - name: Mana Seed Character Base Outfit Canvas_Frame_89
+      frameIndex: 89
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 20
+        width: 20
+        height: 220
+      spriteId: 65bb7d7d095eccc4bbca13d24a001970
+    - name: Mana Seed Character Base Outfit Canvas_Frame_90
+      frameIndex: 90
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 19
+        width: 20
+        height: 209
+      spriteId: c8803b51683099848991e75acebb3dd5
+    - name: Mana Seed Character Base Outfit Canvas_Frame_91
+      frameIndex: 91
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 24
+        height: 217
+      spriteId: 2df35322fdd8c1946a9ed562805e086a
+    - name: Mana Seed Character Base Outfit Canvas_Frame_92
+      frameIndex: 92
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 20
+        width: 20
+        height: 217
+      spriteId: 2dc9d884eeb5a7f438993485d5451a42
+    - name: Mana Seed Character Base Outfit Canvas_Frame_93
+      frameIndex: 93
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 17
+        width: 18
+        height: 224
+      spriteId: 0d07e8a86d6e4e1429b4a2a84a22a749
+    - name: Mana Seed Character Base Outfit Canvas_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: 90f805ac477c45141a8bfa8ebb1aecbe
+    - name: Mana Seed Character Base Outfit Canvas_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 20
+        width: 28
+        height: 218
+      spriteId: a59a6e6f40588f6478e34353b77e82e4
+    - name: Mana Seed Character Base Outfit Canvas_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 222
+      spriteId: 920dc983edc2ae149829028627ab732e
+    - name: Mana Seed Character Base Outfit Canvas_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 20
+        width: 17
+        height: 223
+      spriteId: a16a3c70a2e0bb7498bc534d5ed50b16
+    - name: Mana Seed Character Base Outfit Canvas_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 222
+      spriteId: 25b8a9ade0f17594aa60eb881b24b358
+    - name: Mana Seed Character Base Outfit Canvas_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 17
+        height: 223
+      spriteId: 3b62d0d498ccc9741b01ab9d87ddfe66
+    - name: Mana Seed Character Base Outfit Canvas_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 23
+        height: 213
+      spriteId: cca672174cdcc2c45a030c7031ff0db8
+    - name: Mana Seed Character Base Outfit Canvas_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 23
+        height: 212
+      spriteId: 324869b4db45eb249b296e51e30a5167
+    - name: Mana Seed Character Base Outfit Canvas_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 22
+        height: 219
+      spriteId: 163f064c0fc336845aefe8f5a9451082
+    - name: Mana Seed Character Base Outfit Canvas_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 22
+        height: 223
+      spriteId: 01caa0415a88fbc42972221aeb2d9c10
+    - name: Mana Seed Character Base Outfit Canvas_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 20
+        width: 18
+        height: 223
+      spriteId: b76df9d3e168891468a1062993830fff
+    - name: Mana Seed Character Base Outfit Canvas_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 15
+        y: 20
+        width: 34
+        height: 218
+      spriteId: 818032e6fe2d1fd4c871f42e2cd1579e
+    - name: Mana Seed Character Base Outfit Canvas_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 15
+        y: 15
+        width: 34
+        height: 233
+      spriteId: c4553e51a2849f24abcffbb568f2c6bf
+    - name: Mana Seed Character Base Outfit Canvas_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 14
+        y: 21
+        width: 36
+        height: 221
+      spriteId: 15412906be9839248807a4d63673b99d
+    - name: Mana Seed Character Base Outfit Canvas_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 15
+        y: 20
+        width: 34
+        height: 218
+      spriteId: 913ab8720c467f24fb88fd79a30581cd
+    - name: Mana Seed Character Base Outfit Canvas_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 224
+      spriteId: 9322c3770d96f8143878bc36f8087cba
+    - name: Mana Seed Character Base Outfit Canvas_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 223
+      spriteId: fc861ff91fb9dd1429d433a3f68cc127
+    - name: Mana Seed Character Base Outfit Canvas_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 224
+      spriteId: 100bd3a67eb9cc34f8a6c2d43ee82802
+    - name: Mana Seed Character Base Outfit Canvas_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 20
+        width: 26
+        height: 223
+      spriteId: 388066ed1038135409baed037b6fdf92
+    - name: Mana Seed Character Base Outfit Canvas_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: 404f084168da3c14d8b4efbabb46e936
+    - name: Mana Seed Character Base Outfit Canvas_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: b5e14d30b8a674847a7d4588400ce12b
+    - name: Mana Seed Character Base Outfit Canvas_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 10
+        y: 20
+        width: 44
+        height: 220
+      spriteId: 9dd57c4faa1161c4f9d93d15564fd019
+    - name: Mana Seed Character Base Outfit Canvas_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 20
+        width: 48
+        height: 220
+      spriteId: 84deadc229434ae4a855c2dd4c4f98ed
+    - name: Mana Seed Character Base Outfit Canvas_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: 053c14591fb05e34d8e4da942166e48c
+    - name: Mana Seed Character Base Outfit Canvas_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 21
+        y: 20
+        width: 22
+        height: 224
+      spriteId: 0e7bd71aa0dc63f439e8f5b96370f256
+    - name: Mana Seed Character Base Outfit Canvas_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 14
+        y: 19
+        width: 36
+        height: 224
+      spriteId: 46c48e0dd16cf044390e0cf6821b569d
+    - name: Mana Seed Character Base Outfit Canvas_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 14
+        y: 19
+        width: 36
+        height: 224
+      spriteId: 81d00d96c574c544c861c76669375edf
+    - name: Mana Seed Character Base Outfit Canvas_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 14
+        y: 19
+        width: 36
+        height: 224
+      spriteId: 3a03ea66e3a1b3c4aa513472f7e2ec94
+    - name: Mana Seed Character Base Outfit Canvas_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 13
+        y: 19
+        width: 38
+        height: 224
+      spriteId: 17736c449c318014985708d60525a855
+    - name: Mana Seed Character Base Outfit Canvas_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: bd225c46a44c5084680eb759a11b4ca0
+    - name: Mana Seed Character Base Outfit Canvas_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 20
+        width: 50
+        height: 236
+      spriteId: 94461fec45e06474db43cf3eeeddfe8d
+    - name: Mana Seed Character Base Outfit Canvas_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 20
+        width: 42
+        height: 234
+      spriteId: 685bdce805b8c224bb7ad0f6c3060756
+    - name: Mana Seed Character Base Outfit Canvas_Frame_85
+      frameIndex: 85
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 20
+        width: 14
+        height: 223
+      spriteId: 78166dadfa7ac4249a7404027a2fc65e
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 256}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class OrderManager : MonoBehaviour
 {
     private PlayerManager thePlayer; // 이벤트 도중에 키입력 처리 방지
-    private List<MovingObject> characters;
+    [SerializeField] List<MovingObject> characters;
 
     private void Start()
     {

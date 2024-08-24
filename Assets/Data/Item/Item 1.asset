@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aac024332186934db69fef4c54495ec, type: 3}
   m_Name: Item 1
   m_EditorClassIdentifier: 
-  Type: 0
-  itemName: Gun
+  Type: 1
+  itemName: "\uC0C8\uBCBD"
   itemId: 101
-  itemCount: 2
-  itemDesc: 123456789
+  itemCount: 1
+  itemDesc: "\uC138\uC0C1\uC758 \uC2DC\uC791"

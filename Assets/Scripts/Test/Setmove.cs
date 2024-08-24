@@ -5,7 +5,6 @@ using UnityEngine;
 public class Setmove : MonoBehaviour
 {
     public NPCManager[] npcManagers;
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SetMoveCoroutine());

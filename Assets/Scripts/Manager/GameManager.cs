@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Camera mainCamera;
     public List<ItemData> itemData;
     EnemyData enemyData;
+    public AudioSource loadSceneSource;
 
     [Header("Managers")]
     public PlayerManager player;
@@ -23,17 +24,20 @@ public class GameManager : MonoBehaviour
     public InventoryManager inventoryManager;
     public PoolManager poolManager;
     public EncounterManager encounterManager;
+    public OrderManager orderManager;
     DataExchangeManager exchangeManager;
     private void Awake()
     {
         Instance = this;
         exchangeManager = FindObjectOfType<DataExchangeManager>().GetComponent<DataExchangeManager>();
+        orderManager.PreLoadCharacter();
     }
     private void Start()
     {
         exchangeManager.DataImmigrate();
         GameSave(); // 전투가 끝났을 때 자동저장
         GameLoad();
+        BgmManager.instance.Play(0);
     }
 
     public void GameSave()
@@ -87,8 +91,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator MapChangeCoroutine()
     {
-        fadeManager.FadeOut();
         player.canMove = false;
+        loadSceneSource.Play();
+        fadeManager.FadeOut();
         yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration);
         player.canMove = true;
         SceneManager.LoadScene("Combat");

@@ -47,15 +47,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BackGround
-    uniqueID: 2184635831
+  - name: CollisionLayer
+    uniqueID: 263598825
     locked: 0
-  - name: Character
+  - name: UnderSprite1
+    uniqueID: 1422122857
+    locked: 0
+  - name: UnderSprite2
+    uniqueID: 3100375839
+    locked: 0
+  - name: Sprite
     uniqueID: 1127555847
     locked: 0
-  - name: Sky
-    uniqueID: 4011668707
+  - name: OverSprite1
+    uniqueID: 1450005607
     locked: 0
-  - name: Weather
-    uniqueID: 3640212605
+  - name: OverSprite2
+    uniqueID: 705464879
+    locked: 0
+  - name: OverSprite3
+    uniqueID: 3924810465
     locked: 0
