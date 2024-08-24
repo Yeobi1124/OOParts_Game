@@ -19,6 +19,7 @@ public class CombatManager : MonoBehaviour
         if(instance == null)
             instance = this;
         exchange = FindObjectOfType<DataExchangeManager>();
+        BgmManager.instance.StopAllCoroutines();
     }
 
     private void Start()
@@ -30,5 +31,6 @@ public class CombatManager : MonoBehaviour
         target = pool.Make(exchange.enemyData.enemyCode, border.transform.position).GetComponent<Enemyy>(); // 적 생성
         player.transform.Translate(border.transform.position); // 플레이어도 이동
         cam.transform.Translate(xpos, ypos, 0); // 카메라도 이동..
+        BgmManager.instance.Play(2);
     }
 }

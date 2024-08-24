@@ -13,11 +13,20 @@ public class BgmManager : MonoBehaviour
     private AudioSource audioSource;
     public void Awake()
     {
-        instance = this;
-        audioSource = GetComponent<AudioSource>();
+        if(instance == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+            audioSource = GetComponent<AudioSource>();
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void Start()
     {
+        StopAllCoroutines();
     }
 
     public void Play(int track)

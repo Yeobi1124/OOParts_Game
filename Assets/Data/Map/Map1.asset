@@ -16,4 +16,4 @@ MonoBehaviour:
   enemyData:
   - {fileID: 11400000, guid: 50b60be30810396409d7f35748162fed, type: 2}
   encounterPer:
-  - 0.1
+  - 0.01

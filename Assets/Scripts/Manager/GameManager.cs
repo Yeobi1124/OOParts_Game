@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Camera mainCamera;
     public List<ItemData> itemData;
     EnemyData enemyData;
+    public AudioSource loadSceneSource;
 
     [Header("Managers")]
     public PlayerManager player;
@@ -90,8 +91,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator MapChangeCoroutine()
     {
-        fadeManager.FadeOut();
         player.canMove = false;
+        loadSceneSource.Play();
+        fadeManager.FadeOut();
         yield return new WaitForSeconds(GameManager.Instance.fadeManager.fadeDuration);
         player.canMove = true;
         SceneManager.LoadScene("Combat");
