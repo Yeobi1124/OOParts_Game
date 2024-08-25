@@ -8,9 +8,6 @@ public class Test : MonoBehaviour
 
     [SerializeField] NPCManager abel;
 
-    bool apple;
-    bool anim;
-    bool boss;
 
     public Collider2D animEncounter;
     public GameObject point;
@@ -22,27 +19,35 @@ public class Test : MonoBehaviour
         //인벤토리 아이템 추가
         GameManager.Instance.inventoryManager.Add(items[1]);
         GameManager.Instance.inventoryManager.Add(items[2]);
+        if(GameManager.Instance.questManager.questId == 30 || GameManager.Instance.questManager.questId == 40)
+        {
+            Debug.Log("1");
+            abel.gameObject.SetActive(true);
+            abel.gameObject.transform.Translate(2f, -6f, 0);
+            abel.anim.SetFloat("DirY", 0);
+            abel.anim.SetFloat("DirX", -1);
+        }
     }
 
     private void LateUpdate()
     {
-        if(GameManager.Instance.questManager.questId == 20 && !apple)
+        if(GameManager.Instance.questManager.questId == 20 && !GameManager.Instance.exchangeManager.apple)
         {
             GameManager.Instance.inventoryManager.Add(items[0]);
-            apple = true;
+            GameManager.Instance.exchangeManager.apple = true;
         }
-        if (GameManager.Instance.questManager.questId == 40 && !boss)
+        if (GameManager.Instance.questManager.questId == 40 && !GameManager.Instance.exchangeManager.boss)
         {
             GameManager.Instance.encounterManager.EnterCombat("Abel");
-            boss = true;
+            GameManager.Instance.exchangeManager.boss = true;
         }
     }
 
     public void AnimEvent()
     {
-        if (!anim)
+        if (!GameManager.Instance.exchangeManager.anim)
         {
-            anim = true;
+            GameManager.Instance.exchangeManager.anim = true;
             StartCoroutine(AnimCoroutine());
         }
     }

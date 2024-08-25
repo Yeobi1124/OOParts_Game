@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public PoolManager poolManager;
     public EncounterManager encounterManager;
     public OrderManager orderManager;
-    DataExchangeManager exchangeManager;
+    public DataExchangeManager exchangeManager;
     private void Awake()
     {
         Instance = this;
@@ -34,19 +34,20 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        exchangeManager.DataImmigrate();
-        GameSave(); // 전투가 끝났을 때 자동저장
         GameLoad();
+        exchangeManager.DataImmigrate();
         BgmManager.instance.Play(0);
     }
 
     public void GameSave()
     {
+        Debug.Log("save");
         PlayerPrefs.SetFloat("PlayerX", player.transform.position.x);
         PlayerPrefs.SetFloat("PlayerY", player.transform.position.y);
         PlayerPrefs.SetInt("QuestId", questManager.questId);
         PlayerPrefs.SetInt("QuestActionIndex", questManager.questActionIndex);
-        for(int i =0; i < inventoryManager.inventory.Count; i++)
+        PlayerPrefs.SetString("Map", currentMapName);
+        for (int i =0; i < inventoryManager.inventory.Count; i++)
         {
             PlayerPrefs.SetInt("Item" + inventoryManager.inventory[i].itemId.ToString(), inventoryManager.inventory[i].itemCount);
         }
@@ -58,11 +59,16 @@ public class GameManager : MonoBehaviour
     public void GameLoad()
     {
         if (!PlayerPrefs.HasKey("PlayerX"))
+        {
+            Debug.Log("there's no data");
             return;
+        }
+
         float x = PlayerPrefs.GetFloat("PlayerX");
         float y = PlayerPrefs.GetFloat("PlayerY");
         int questId = PlayerPrefs.GetInt("QuestId");
         int questActionIndex = PlayerPrefs.GetInt("QuestActionIndex");
+        currentMapName = PlayerPrefs.GetString("Map");
         for(int i =0; i < itemData.Count; i++)
         {
             
