@@ -7156,6 +7156,7 @@ MonoBehaviour:
   poolManager: {fileID: 1183038426}
   encounterManager: {fileID: 1720410741}
   orderManager: {fileID: 685505003}
+  exchangeManager: {fileID: 0}
 --- !u!4 &193401849
 Transform:
   m_ObjectHideFlags: 0
@@ -10869,8 +10870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
   m_AssetsPPU: 16
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
+  m_RefResolutionX: 448
+  m_RefResolutionY: 240
   m_CropFrame: 0
   m_GridSnapping: 0
   m_FilterMode: 0
@@ -117697,6 +117698,9 @@ MonoBehaviour:
   playerHealth: 100
   playerX: 0
   playerY: 0
+  apple: 0
+  anim: 0
+  boss: 0
 --- !u!1 &1465131647
 GameObject:
   m_ObjectHideFlags: 0

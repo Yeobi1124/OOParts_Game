@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -37,7 +36,7 @@ public class CombatManager : MonoBehaviour
 
         EventManager.Instance.AddEventListner(CombatEventType.Win, (CombatEventType type, Component Sender, object param) => {
             Debug.Log("Player Win");
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Story");
         });
 
         EventManager.Instance.AddEventListner(CombatEventType.Lose, (CombatEventType type, Component Sender, object param) => {

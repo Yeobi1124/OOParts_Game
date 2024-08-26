@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
-using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 
 public class Boss : Enemyy
@@ -67,7 +66,7 @@ public class Boss : Enemyy
     private void SelectAttack(){
         float rand = UnityEngine.Random.value;
         float[] phase1Prob = new float[3] {0.40f, 0.40f, 0.20f};
-        float[] phase2Prob = new float[4] {0f, 0f, 0f, 1f};//{0.25f, 0.25f, 0.25f, 0.25f};
+        float[] phase2Prob = new float[4] {0.25f, 0.25f, 0.25f, 0.25f};
 
         actFinish = false;
 

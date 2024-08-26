@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor.UIElements;
+#endif
 public class Turret : MonoBehaviour
 {
     public int attackSpeed;
