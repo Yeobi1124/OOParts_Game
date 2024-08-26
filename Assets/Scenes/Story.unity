@@ -10825,7 +10825,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.7891655
+  orthographic size: 6.890625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -117689,7 +117689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51161937c0a969746ad0bd0b7dbb9cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questId: 20
+  questId: 0
   questActionIndex: 0
   enemyData: {fileID: 0}
   combat: 0

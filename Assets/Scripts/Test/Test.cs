@@ -8,7 +8,6 @@ public class Test : MonoBehaviour
 
     [SerializeField] NPCManager abel;
 
-
     public Collider2D animEncounter;
     public GameObject point;
    
@@ -31,12 +30,13 @@ public class Test : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(GameManager.Instance.questManager.questId == 20 && !GameManager.Instance.exchangeManager.apple)
+        if(GameManager.Instance.questManager.questId == 20 && !GameManager.Instance.exchangeManager.apple) // 
         {
+            Debug.Log("sdf");
             GameManager.Instance.inventoryManager.Add(items[0]);
             GameManager.Instance.exchangeManager.apple = true;
         }
-        if (GameManager.Instance.questManager.questId == 40 && !GameManager.Instance.exchangeManager.boss)
+        if (GameManager.Instance.questManager.questId == 40 && !GameManager.Instance.exchangeManager.boss) // 
         {
             GameManager.Instance.encounterManager.EnterCombat("Abel");
             GameManager.Instance.exchangeManager.boss = true;

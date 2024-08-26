@@ -42,7 +42,7 @@ public class TalkManager : MonoBehaviour
         talkData.Add(4000, new string[] { "↑ : 오두막\n↓ : 세 갈래 길" });
         talkData.Add(5000, new string[] { "← : 세 갈래 길\n→ : 마을로 향하는 길(미구현)" });
         //Objects
-        talkData.Add(6000, new string[] { "\"순수하던 때로 돌아가고파\"", "라고 적혀져 있다." });
+        talkData.Add(6000, new string[] { "\"안녕! 난 눈사람이야!\"", "...라고 쓰여져 있다." });
         talkData.Add(7000, new string[] { "포근해 보이는 침대다." });
         talkData.Add(8000, new string[] { "평범해 보이는 사과 바구니다." });
         talkData.Add(9000, new string[] { "평범해 보이는 올리브 바구니다." });
